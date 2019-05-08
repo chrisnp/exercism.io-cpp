@@ -5,8 +5,7 @@
 
 namespace hello_world {
 
-    std::string hello();
-    return "Hello, World!";
+std::string hello();
 
 }
 
