@@ -35,3 +35,7 @@
 /*/CMakeFiles/
 .vscode/
 /*/build/
+/*/cmake_install.cmake
+/*/Makefile
+/test/Catch.hpp
+cleanup.sh
