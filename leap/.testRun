@@ -1,0 +1,27 @@
+$ make
+Scanning dependencies of target leap
+[ 25%] Building CXX object CMakeFiles/leap.dir/leap.cpp.o
+[ 50%] Linking CXX executable leap
+[100%] Built target leap
+===============================================================================
+All tests passed (6 assertions in 6 test cases)
+
+[100%] Built target test_leap
+
+
+
+>make
+Scanning dependencies of target leap
+[ 25%] Building CXX object CMakeFiles/leap.dir/leap_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/leap.dir/leap.cpp.obj
+[ 75%] Building CXX object CMakeFiles/leap.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable leap.exe
+
+[100%] Built target leap
+
+Scanning dependencies of target test_leap
+===============================================================================
+All tests passed (6 assertions in 6 test cases)
+
+[100%] Built target test_leap
+
