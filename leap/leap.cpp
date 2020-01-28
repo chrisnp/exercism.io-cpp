@@ -15,7 +15,7 @@ namespace leap {
     }
 
     bool is_leap_year(int year) {
-        return divBy004(year) && 
-              (divBy400(year) || !divBy100(year));
+        return divBy400(year) || 
+              (divBy004(year) && !divBy100(year));
     }
 }  // namespace leap
