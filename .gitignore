@@ -34,6 +34,7 @@
 /*/CMakeCache.*
 /*/CMakeFiles/
 .vscode/
+.ionide/
 /*/build/
 /*/cmake_install.cmake
 /*/Makefile
