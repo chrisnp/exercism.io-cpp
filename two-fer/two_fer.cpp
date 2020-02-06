@@ -2,11 +2,9 @@
 
 using namespace std;
 
-namespace two_fer {
+string two_fer::two_fer(const string& name) {
 
-    string two_fer(const string& name) {
+    return "One for " + name + ", one for me.";
+}
 
-        return "One for " + name + ", one for me.";
-    }
-} // namespace two_fer
 
