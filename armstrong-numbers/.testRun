@@ -1,0 +1,36 @@
+$make
+
+Scanning dependencies of target armstrong-numbers
+
+[ 25%] Building CXX object CMakeFiles/armstrong-numbers.dir/armstrong_numbers_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/armstrong-numbers.dir/armstrong_numbers.cpp.o
+[ 75%] Building CXX object CMakeFiles/armstrong-numbers.dir/test/tests-main.cpp.o
+
+[100%] Linking CXX executable armstrong-numbers
+
+[100%] Built target armstrong-numbers
+
+Scanning dependencies of target test_armstrong-numbers
+
+===============================================================================
+All tests passed (9 assertions in 9 test cases)
+
+[100%] Built target test_armstrong-numbers
+
+
+
+>make
+
+Scanning dependencies of target armstrong-numbers
+
+[ 25%] Building CXX object CMakeFiles/armstrong-numbers.dir/armstrong_numbers.cpp.obj
+[ 50%] Linking CXX executable armstrong-numbers.exe
+
+[100%] Built target armstrong-numbers
+
+Scanning dependencies of target armstrong-numbers
+
+===============================================================================
+All tests passed (9 assertions in 9 test cases)
+
+[100%] Built target test_armstrong-numbers
