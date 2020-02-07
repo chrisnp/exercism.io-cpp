@@ -1,0 +1,32 @@
+>cmake -G "MSYS Makefiles" ..
+
+-- The CXX compiler identification is GNU 9.1.0
+-- Check for working CXX compiler: C:/msys64/usr/bin/c++.exe
+-- Check for working CXX compiler: C:/msys64/usr/bin/c++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/reverse-string/build
+
+
+>make
+
+Scanning dependencies of target reverse-string
+
+[ 25%] Building CXX object CMakeFiles/reverse-string.dir/reverse_string_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/reverse-string.dir/reverse_string.cpp.obj
+[ 75%] Building CXX object CMakeFiles/reverse-string.dir/test/tests-main.cpp.obj
+
+[100%] Linking CXX executable reverse-string.exe
+
+[100%] Built target reverse-string
+
+Scanning dependencies of target test_reverse-string
+
+===============================================================================
+All tests passed (5 assertions in 5 test cases)
+
+[100%] Built target test_reverse-string
