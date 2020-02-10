@@ -11,16 +11,18 @@ const string acronym::acronym(const string &_phrase) {
 
     // word boundaries
     char _bounds[] = {' ', '_', '-'};
-
+    
     for (auto ch : phrase) {
         if (isalnum(ch) && boundary) {
             acro += toupper(ch);
             boundary = false;
         } 
+        // check if ch is in word boundaries
         char * it { 
-            find(_bounds, _bounds + 3, ch) 
+            find(begin(_bounds), end(_bounds), ch) 
         };
-        if (it != _bounds + 3) 
+        // if it is, switch boundary 
+        if (it != end(_bounds)) 
             boundary = true;
     }
     return acro;
