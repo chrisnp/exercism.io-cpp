@@ -16,3 +16,24 @@ Scanning dependencies of target test_acronym
 All tests passed (6 assertions in 6 test cases)
 
 [100%] Built target test_acronym
+
+
+
+> make
+
+Scanning dependencies of target acronym
+
+[ 25%] Building CXX object CMakeFiles/acronym.dir/acronym_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/acronym.dir/acronym.cpp.obj
+[ 75%] Building CXX object CMakeFiles/acronym.dir/test/tests-main.cpp.obj
+
+[100%] Linking CXX executable acronym.exe
+
+[100%] Built target acronym
+
+Scanning dependencies of target test_acronym
+
+===============================================================================
+All tests passed (6 assertions in 6 test cases)
+
+[100%] Built target test_acronym
