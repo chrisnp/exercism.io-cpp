@@ -10,12 +10,11 @@ unsigned int collatz_conjecture::steps (const int &_num) {
     if (num <= 0) 
         throw domain_error("not a positive integer");
 
-    while (num != 1) {
+    while (num > 1) {
         ++steps;
-        if (num & 1) {
+        if (num & 1)
             num *= 3, 
             num += 1;
-        }
         else 
             num >>= 1;
     }
