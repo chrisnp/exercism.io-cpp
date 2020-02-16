@@ -7,12 +7,8 @@ class space_age {
     long age;
 
 public:
-    space_age(long _seconds) {
-        age = _seconds; 
-    };
-    int seconds() const {
-        return age;
-    };
+    space_age(long);
+    int seconds() const;
     float on_mercury() const;
     float on_venus() const;
     float on_earth() const;
