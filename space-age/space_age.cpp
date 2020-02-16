@@ -1,28 +1,36 @@
 #include "space_age.h"
 
-const long Earth_Year = 31557600;
+enum planet {
+        MERCURY,
+        VENUS,
+        EARTH,
+        MARS,
+        JUPITER,
+        SATURN,
+        URANUS,
+        NEPTUNE
+};
 
 const double Orbital_Period[] {
-    0.2408467, 
-    0.61519726, 
-    1.0,
-    1.8808158, 
-    11.862615, 
-    29.447498, 
-    84.016846, 
-    164.79132
+        0.2408467, 
+        0.61519726, 
+        1.0000000,
+        1.8808158, 
+        11.862615, 
+        29.447498, 
+        84.016846, 
+        164.79132
 };
 
-enum planet {
-  MERCURY,
-  VENUS,
-  EARTH,
-  MARS,
-  JUPITER,
-  SATURN,
-  URANUS,
-  NEPTUNE
-};
+const long Earth_Year = 31557600;
+
+space_age::space_age::space_age(long _seconds) {
+        age = _seconds; 
+}
+
+int space_age::space_age::seconds() const { 
+    return age;
+}
 
 float space_age::space_age::on_mercury() const {
     return age / (Orbital_Period[MERCURY] * Earth_Year);
