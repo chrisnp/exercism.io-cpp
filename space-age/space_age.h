@@ -4,10 +4,10 @@ namespace space_age {
 
 class space_age {
 
-    long age;
+    long long age;
 
 public:
-    space_age(long);
+    space_age(long long);
     int seconds() const;
     float on_mercury() const;
     float on_venus() const;
