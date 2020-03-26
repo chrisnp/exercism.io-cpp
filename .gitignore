@@ -36,7 +36,7 @@
 /*/CMakeFiles/
 .vscode/
 .ionide/
-# /boost/
+boost
 /*/build/
 /*/cmake_install.cmake
 /*/Makefile
