@@ -10,8 +10,6 @@
 
 using namespace boost::posix_time;
 
-
-#define EXERCISM_RUN_ALL_TESTS
 #if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("test_1")
