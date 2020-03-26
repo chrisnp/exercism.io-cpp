@@ -3,6 +3,9 @@
 
 // Armstrong-numbers exercise test case data version 1.1.0
 
+#if !defined(EXERCISM_RUN_ALL_TESTS)
+#define EXERCISM_RUN_ALL_TESTS
+
 TEST_CASE("zero_is_an_armstrong_number")
 {
     REQUIRE(armstrong_numbers::is_armstrong_number(0));
@@ -48,5 +51,4 @@ TEST_CASE("seven_digit_number_that_is_not_an_armstrong_number")
     REQUIRE_FALSE(armstrong_numbers::is_armstrong_number(9926314));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
-#endif // !EXERCISM_RUN_ALL_TESTS
+#endif

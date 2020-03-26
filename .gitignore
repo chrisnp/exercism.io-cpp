@@ -31,13 +31,17 @@
 /*/*.out
 /*/*.app
 
+# Project specific
 /*/CMakeCache.*
 /*/CMakeFiles/
 .vscode/
 .ionide/
+boost
 /*/build/
 /*/cmake_install.cmake
 /*/Makefile
 /test/catch.hpp
 cleanup.sh
 cleanup.ps1
+Notes.*
+makelnk.bat
