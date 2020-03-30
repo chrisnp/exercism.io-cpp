@@ -1,8 +1,12 @@
-#if !defined(ISOGRAM_H)
-#define ISOGRAM_H
+#pragma once
 
+#define EXERCISM_RUN_ALL_TESTS
+
+#include <string>
+
+using namespace std;
 namespace isogram {
 
-}  // namespace isogram
+    bool is_isogram(const string &);
 
-#endif // ISOGRAM_H
+}  
