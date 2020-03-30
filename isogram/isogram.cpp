@@ -1,5 +1,20 @@
 #include "isogram.h"
+#include <set>
 
-namespace isogram {
+bool isogram::is_isogram(const string &word) {
 
-}  // namespace isogram
+    set<char> isogram {};
+    
+    for(char ch : word) {
+
+        if (!isalpha(ch)) continue;
+        
+        ch = tolower(ch);
+
+        if (isogram.count(ch) > 0) 
+            return false;
+        
+        isogram.insert(ch);
+    }
+    return true;
+}
