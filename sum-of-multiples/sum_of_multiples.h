@@ -7,8 +7,8 @@ namespace sum_of_multiples {
 
 using namespace std;
 
-typedef vector<int> divisors;
+typedef vector<long> divisors;
 
-int to(divisors factors, int up_to);
+long to(divisors factors, long up_to);
 
 }  // namespace sum_of_multiples
