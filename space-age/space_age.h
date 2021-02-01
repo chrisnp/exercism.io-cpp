@@ -8,7 +8,9 @@ class space_age {
 
 public:
     space_age(long long);
-    int seconds() const;
+
+    long seconds() const;
+
     float on_mercury() const;
     float on_venus() const;
     float on_earth() const;
@@ -19,3 +21,5 @@ public:
     float on_neptune() const;
 };
 } 
+
+#define EXERCISM_RUN_ALL_TESTS
