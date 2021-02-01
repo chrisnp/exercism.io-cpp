@@ -1,9 +1,6 @@
 #include "prime_factors.h"
 #include "test/catch.hpp"
 
-#if !defined(EXERCISM_RUN_ALL_TESTS)
-#define EXERCISM_RUN_ALL_TESTS
-
 TEST_CASE("_1_yields_empty")
 {
     const std::vector<int> expected{};
@@ -14,6 +11,7 @@ TEST_CASE("_1_yields_empty")
 }
 
 #if defined(EXERCISM_RUN_ALL_TESTS)
+
 TEST_CASE("_2_yields_2")
 {
     const std::vector<int> expected{2};
@@ -94,4 +92,5 @@ TEST_CASE("_901255_yields_5_17_23_461")
 
     REQUIRE(expected == actual);
 }
+
 #endif
