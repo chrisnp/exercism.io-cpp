@@ -31,6 +31,7 @@
 /*/*.out
 /*/*.app
 
+# Intermediate build files
 /*/CMakeCache.*
 /*/CMakeFiles/
 .vscode/
@@ -39,3 +40,9 @@
 /*/Makefile
 /test/Catch.hpp
 cleanup.sh
+
+# Visual Studio Code workspace
+.ionide/
+cleanup.*
+makelnk.bat
+Notes.md 
