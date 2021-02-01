@@ -28,7 +28,7 @@ space_age::space_age::space_age(long long _seconds) {
         age = _seconds; 
 }
 
-long space_age::space_age::seconds() const { 
+int space_age::space_age::seconds() const { 
     return age;
 }
 
