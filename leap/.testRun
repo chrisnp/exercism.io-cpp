@@ -55,3 +55,21 @@ Scanning dependencies of target test_leap
 
 ===============================================================================
 All tests passed (6 assertions in 6 test cases)
+
+
+
+>cmake -G "MSYS Makefiles" ..
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/leap/build
+
+>make
+
+[100%] Built target leap
+
+Scanning dependencies of target test_leap
+
+===============================================================================
+All tests passed (6 assertions in 6 test cases)
+===============================================================================
