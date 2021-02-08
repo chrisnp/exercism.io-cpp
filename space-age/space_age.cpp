@@ -22,13 +22,13 @@ const double Orbital_Period[] {
         164.79132
 };
 
-const long Earth_Year = 31557600;
+const uint64_t Earth_Year = 31557600;
 
-space_age::space_age::space_age(long long _seconds) {
+space_age::space_age::space_age(uint_fast64_t _seconds) {
         age = _seconds; 
 }
 
-int space_age::space_age::seconds() const { 
+uint_fast64_t space_age::space_age::seconds() const { 
     return age;
 }
 
