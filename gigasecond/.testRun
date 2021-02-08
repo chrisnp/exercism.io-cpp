@@ -1,0 +1,32 @@
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Boost version: 1.68.0
+-- Found the following Boost libraries:
+--   date_time
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/gigasecond/build
+
+
+>make 
+
+Scanning dependencies of target gigasecond
+[ 25%] Building CXX object CMakeFiles/gigasecond.dir/gigasecond_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/gigasecond.dir/gigasecond.cpp.o
+[ 75%] Building CXX object CMakeFiles/gigasecond.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable gigasecond
+
+[100%] Built target gigasecond
+
+Scanning dependencies of target test_gigasecond
+===============================================================================
+All tests passed (5 assertions in 5 test cases)
+
+[100%] Built target test_gigasecond

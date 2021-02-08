@@ -73,3 +73,6 @@ Scanning dependencies of target test_leap
 ===============================================================================
 All tests passed (6 assertions in 6 test cases)
 ===============================================================================
+
+[100%] Built target test_leap
+

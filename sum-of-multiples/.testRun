@@ -1,0 +1,25 @@
+-- The CXX compiler identification is GNU 9.2.0
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/sum-of-multiples/build
+
+Scanning dependencies of target sum-of-multiples
+
+[ 25%] Building CXX object CMakeFiles/sum-of-multiples.dir/sum_of_multiples_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/sum-of-multiples.dir/sum_of_multiples.cpp.obj
+[ 75%] Building CXX object CMakeFiles/sum-of-multiples.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable sum-of-multiples.exe
+
+[100%] Built target sum-of-multiples
+
+Scanning dependencies of target test_sum-of-multiples
+===============================================================================
+All tests passed (12 assertions in 12 test cases)
+
+[100%] Built target test_sum-of-multiples
