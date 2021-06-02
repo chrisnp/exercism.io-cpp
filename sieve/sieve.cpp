@@ -4,7 +4,7 @@
 std::vector<int> sieve::primes(int limit) {
 
     std::vector<bool> sieve(limit + 1, true);
-    std::vector<int> primes;
+    std::vector<int> primes {};
 
     for (int candidate = 2; candidate <= limit; candidate++) {
         if (!sieve[candidate]) {
