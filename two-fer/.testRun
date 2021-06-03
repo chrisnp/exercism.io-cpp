@@ -1,0 +1,35 @@
+>make
+Scanning dependencies of target two-fer
+
+[ 25%] Building CXX object CMakeFiles/two-fer.dir/two_fer_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/two-fer.dir/two_fer.cpp.obj
+[ 75%] Building CXX object CMakeFiles/two-fer.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable two-fer.exe
+
+[100%] Built target two-fer
+
+Scanning dependencies of target test_two-fer
+
+===============================================================================
+All tests passed (3 assertions in 3 test cases)
+
+[100%] Built target test_two-fer
+
+
+
+>make
+Scanning dependencies of target two-fer
+
+[ 25%] Building CXX object CMakeFiles/two-fer.dir/two_fer_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/two-fer.dir/two_fer.cpp.obj
+[ 75%] Building CXX object CMakeFiles/two-fer.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable two-fer.exe
+
+[100%] Built target two-fer
+
+Scanning dependencies of target test_two-fer
+
+===============================================================================
+All tests passed (3 assertions in 3 test cases)
+
+[100%] Built target test_two-fer

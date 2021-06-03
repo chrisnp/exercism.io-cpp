@@ -1,0 +1,27 @@
+>cmake -G "MSYS Makefiles" ..
+-- The CXX compiler identification is GNU 9.2.0
+-- Check for working CXX compiler: C:/msys64/mingw64/bin/g++.exe
+-- Check for working CXX compiler: C:/msys64/mingw64/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/rna-transcription/build
+
+
+>make
+Scanning dependencies of target rna-transcription
+[ 25%] Building CXX object CMakeFiles/rna-transcription.dir/rna_transcription_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/rna-transcription.dir/rna_transcription.cpp.obj
+[ 75%] Building CXX object CMakeFiles/rna-transcription.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable rna-transcription.exe
+
+[100%] Built target rna-transcription
+
+Scanning dependencies of target test_rna-transcription
+===============================================================================
+All tests passed (5 assertions in 5 test cases)
+
+[100%] Built target test_rna-transcription
