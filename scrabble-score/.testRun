@@ -1,0 +1,13 @@
+>cmake -G "MSYS Makefiles" ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/scrabble-score/build
+
+>make
+
+[100%] Built target scrabble-score
+
+===============================================================================
+All tests passed (6 assertions in 6 test cases)
+
+[100%] Built target test_scrabble-score
