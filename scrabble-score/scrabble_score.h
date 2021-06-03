@@ -1,6 +1,5 @@
 #pragma once
 
-#include <numeric>
 #include <string>
 
 namespace scrabble_score {
