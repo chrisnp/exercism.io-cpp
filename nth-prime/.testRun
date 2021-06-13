@@ -1,0 +1,23 @@
+>cmake -G "MSYS Makefiles" ..
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Chris/exercism/cpp/nth-prime/build
+
+>make
+
+Scanning dependencies of target nth-prime
+
+[ 25%] Building CXX object CMakeFiles/nth-prime.dir/nth_prime_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/nth-prime.dir/nth_prime.cpp.obj
+[ 75%] Building CXX object CMakeFiles/nth-prime.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable nth-prime.exe
+
+[100%] Built target nth-prime
+
+Scanning dependencies of target test_nth-prime
+
+===============================================================================
+All tests passed (5 assertions in 5 test cases)
+
+[100%] Built target test_nth-prime
