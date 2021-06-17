@@ -15,10 +15,11 @@ public:
                 const square &black = {7, 3}
              );
 
+    explicit operator std::string() const;
+
     const square &white() const noexcept;
     const square &black() const noexcept;
 
-    explicit operator std::string() const;
     bool can_attack() const noexcept;
     
 private:
