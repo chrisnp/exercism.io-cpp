@@ -5,7 +5,9 @@
 
 namespace protein_translation {
 
-std::vector<std::string> proteins(const std::string& rna);
+using namespace std;
+
+vector<string> proteins(const string&);
  
 }  // namespace protein_translation
 
