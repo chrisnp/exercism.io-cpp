@@ -1,5 +1,5 @@
 #include "nucleotide_count.h"
-// #include <stdexcept>
+
 
 nucleotide_count::counter::counter(std::string strand) {
     for (auto &s : strand) {
@@ -19,7 +19,8 @@ nucleotide_count::counter::counter(std::string strand) {
 int nucleotide_count::counter::count(char n) const {
     try {
         return counts.at(n);
-    } catch(const std::logic_error&) {
+    } 
+    catch(const std::logic_error&) {
         throw std::invalid_argument("invalid nucleotide");
     }
 }
