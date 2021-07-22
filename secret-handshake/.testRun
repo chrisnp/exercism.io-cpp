@@ -1,0 +1,31 @@
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 9.2.0
+-- Check for working CXX compiler: C:/msys64/mingw64/bin/g++.exe
+-- Check for working CXX compiler: C:/msys64/mingw64/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Chris/exercism/cpp/secret-handshake/build
+
+
+>make
+
+Scanning dependencies of target secret-handshake
+
+[ 25%] Building CXX object CMakeFiles/secret-handshake.dir/secret_handshake_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/secret-handshake.dir/secret_handshake.cpp.obj
+[ 75%] Building CXX object CMakeFiles/secret-handshake.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable secret-handshake.exe
+
+[100%] Built target secret-handshake
+
+Scanning dependencies of target test_secret-handshake
+
+===============================================================================
+All tests passed (11 assertions in 11 test cases)
+
+[100%] Built target test_secret-handshake
