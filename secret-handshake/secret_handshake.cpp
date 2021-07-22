@@ -3,7 +3,7 @@
 
 using namespace std;
 
- 
+
 vector<string> secret_handshake::commands(unsigned int code) {
     
     auto handshake = vector<string>{};
