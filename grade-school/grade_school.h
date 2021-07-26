@@ -12,8 +12,8 @@ class school {
 
 public:
     Roster roster() const;
-    void add(std::string student, int grade);
-    std::vector<std::string> grade(int grade) const;
+    void add(std::string, int);
+    std::vector<std::string> grade(int) const;
 private:
     Roster school_;
 };
