@@ -28,3 +28,21 @@ Scanning dependencies of target test_grade-school
 All tests passed (8 assertions in 8 test cases)
 
 [100%] Built target test_grade-school
+
+
+
+>cmake -G "Unix Makefiles" ..
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/grade-school/build
+
+
+>make
+
+[100%] Built target grade-school
+
+===============================================================================
+All tests passed (8 assertions in 8 test cases)
+
+[100%] Built target test_grade-school
