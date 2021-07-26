@@ -1,7 +1,5 @@
 #include "grade_school.h"
-
 #include <algorithm>
-#include <stdexcept>
 
 using namespace std;
 
@@ -15,13 +13,11 @@ void grade_school::school::add(string student, int grade) {
 }
 
 vector<string> grade_school::school::grade(int grade) const {
-    // try {
-    //     return school_.at(grade);
-    // }
-    // catch (const std::logic_error &error) {
-    //     vector<string> empty {{}};
-    //     return empty;
-    // }
+    try {
+        return school_.at(grade);
+    }
+    catch (const std::logic_error &error) {
+        static vector<string> empty_grade {};
+        return empty_grade;
+    }
 }
-
-
