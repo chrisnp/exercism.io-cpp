@@ -1,5 +1,27 @@
 #include "grade_school.h"
 
-namespace grade_school {
+#include <algorithm>
+#include <stdexcept>
 
-}  // namespace grade_school
+using namespace std;
+
+grade_school::Roster grade_school::school::roster() const {
+    return school_;
+}
+
+void grade_school::school::add(string student, int grade) {
+    school_[grade].insert(school_[grade].end(), student);
+    sort(school_[grade].begin(), school_[grade].end());
+}
+
+vector<string> grade_school::school::grade(int grade) const {
+    // try {
+    //     return school_.at(grade);
+    // }
+    // catch (const std::logic_error &error) {
+    //     vector<string> empty {{}};
+    //     return empty;
+    // }
+}
+
+
