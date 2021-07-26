@@ -15,13 +15,12 @@ class counter {
 
 public: 
     counter(std::string strand);
-    nucl_counts nucleotide_counts() const {
+    const nucl_counts nucleotide_counts() const {
         return counts;
     };
     int count(char) const;
 
 private:
-    const std::string strand;
     nucl_counts count(std::string) const;
 };
 }  // namespace nucleotide_count
