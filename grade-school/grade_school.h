@@ -12,12 +12,10 @@ class school {
 
 public:
     Roster roster() const;
-    void add(string student, int grade);
+    void add(std::string student, int grade);
     std::vector<std::string> grade(int grade) const;
-
 private:
-    
-
+    Roster school_;
 };
 
 }  // namespace grade_school
