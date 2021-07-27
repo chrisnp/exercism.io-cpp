@@ -1,0 +1,30 @@
+-- The CXX compiler identification is GNU 9.1.0
+-- Check for working CXX compiler: /usr/bin/c++.exe
+-- Check for working CXX compiler: /usr/bin/c++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/difference-of-squares/build
+
+
+Scanning dependencies of target difference-of-squares
+
+
+[ 25%] Building CXX object CMakeFiles/difference-of-squares.dir/difference_of_squares_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/difference-of-squares.dir/difference_of_squares.cpp.obj
+[ 75%] Building CXX object CMakeFiles/difference-of-squares.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable difference-of-squares.exe
+
+[100%] Built target difference-of-squares
+
+Scanning dependencies of target test_difference-of-squares
+
+
+===============================================================================
+All tests passed (9 assertions in 3 test cases)
+
+
+[100%] Built target test_difference-of-squares
