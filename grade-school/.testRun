@@ -1,0 +1,48 @@
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 9.2.0
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/grade-school/build
+
+>make
+
+Scanning dependencies of target grade-school
+
+[ 25%] Building CXX object CMakeFiles/grade-school.dir/grade_school_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/grade-school.dir/grade_school.cpp.obj
+[ 75%] Building CXX object CMakeFiles/grade-school.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable grade-school.exe
+
+[100%] Built target grade-school
+
+Scanning dependencies of target test_grade-school
+
+===============================================================================
+All tests passed (8 assertions in 8 test cases)
+
+[100%] Built target test_grade-school
+
+
+
+>cmake -G "Unix Makefiles" ..
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/grade-school/build
+
+
+>make
+
+[100%] Built target grade-school
+
+===============================================================================
+All tests passed (8 assertions in 8 test cases)
+
+[100%] Built target test_grade-school
