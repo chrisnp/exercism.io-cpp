@@ -4,7 +4,6 @@
 #include <regex>
 
 namespace bob {
-
     static const std::regex shout {"^[^a-z]*[A-Z][^a-z]*$"};
     static const std::regex question {"\\?[^a-z]*$"};
     static const std::regex silence {"^\\W*$"};
@@ -14,9 +13,10 @@ namespace bob {
     static const std::string RESPONSE_QUESTION { "Sure." };
     static const std::string RESPONSE_SILENCE  { "Fine. Be that way!" };
     static const std::string RESPONSE_DEFAULT  { "Whatever." };
- 
+    
     std::string hey(const std::string &);
-
 }  // namespace bob
 
+#ifndef EXERCISM_RUN_ALL_TESTS
 #define EXERCISM_RUN_ALL_TESTS
+#endif

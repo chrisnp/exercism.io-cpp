@@ -1,0 +1,28 @@
+>cmake -G "MSYS Makefiles" ..
+
+-- The CXX compiler identification is GNU 9.2.0
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/etl/build
+
+
+>make
+
+Scanning dependencies of target etl
+[ 33%] Building CXX object CMakeFiles/etl.dir/etl_test.cpp.obj
+[ 66%] Building CXX object CMakeFiles/etl.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable etl.exe
+
+[100%] Built target etl
+
+Scanning dependencies of target test_etl
+===============================================================================
+All tests passed (4 assertions in 4 test cases)
+
+[100%] Built target test_etl
