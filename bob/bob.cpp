@@ -3,18 +3,14 @@
 using namespace std;
 
 string bob::hey(const string &query) {
-    if (regex_search(query, bob::shout) && 
-        regex_search(query, bob::question)) {
-        return bob::RESPONSE_EMPHATIC;
-    }
-    if (regex_search(query, bob::shout)) {
-        return bob::RESPONSE_SHOUTING;
-    }
-    if (regex_search(query, bob::question)) { 
-        return bob::RESPONSE_QUESTION; 
-    }
-    if (regex_search(query, bob::silence)) { 
-        return bob::RESPONSE_SILENCE; 
-    }
-    return bob::RESPONSE_DEFAULT;
+    return  regex_search(query, shout) && 
+            regex_search(query, question) 
+            ? RESPONSE_EMPHATIC 
+            : regex_search(query, shout)    
+            ? RESPONSE_SHOUTING 
+            : regex_search(query, question) 
+            ? RESPONSE_QUESTION 
+            : regex_search(query, silence)  
+            ? RESPONSE_SILENCE  
+            : RESPONSE_DEFAULT;
 }
