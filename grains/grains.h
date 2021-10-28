@@ -1,9 +1,11 @@
 #pragma once
 
+#include <cstdint>
+
 namespace grains {
 
-    std::uint64_t square(int &);
-    std::uint64_t total();
+    std::uint_least64_t square(std::uint_least16_t);
+    std::uint_least64_t total();
 
 }  // namespace grains
 
