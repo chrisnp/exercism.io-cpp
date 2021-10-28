@@ -1,0 +1,21 @@
+>cmake -G "MSYS Makefiles" ..
+
+-- The CXX compiler identification is GNU 9.2.0
+-- Check for working CXX compiler: C:/msys64/mingw64/bin/g++.exe
+-- Check for working CXX compiler: C:/msys64/mingw64/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Chris/exercism/cpp/grains/build
+
+
+>make
+
+[100%] Built target grains
+===============================================================================
+All tests passed (8 assertions in 8 test cases)
+
+[100%] Built target test_grains
