@@ -4,7 +4,9 @@
 
 namespace pangram {
 
-    bool is_pangram(const std::string &);
+constexpr int ALPHABET_SIZE { 26 };
+
+bool is_pangram(const std::string &) noexcept;
 
 }  // namespace pangram
 
