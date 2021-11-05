@@ -2,20 +2,17 @@
 #include <bitset>
 
 using namespace std;
-using alphabet = bitset<26>;
+using alphabet = bitset<pangram::ALPHABET_SIZE>;
 
-static constexpr unsigned letter_idx(char ch){
+constexpr int letter_idx(char ch) noexcept {
     return tolower(ch) - 'a';
 }
 
-bool pangram::is_pangram(const string &sentence) {
-    alphabet every_letter;
-
-    for (char ch: sentence) {
-        if (!isalpha(ch)) continue;
-        every_letter.set(letter_idx(ch));
+bool pangram::is_pangram(const string &sentence) noexcept {
+    if (sentence.size() < pangram::ALPHABET_SIZE) return false;
+    alphabet letters;
+    for (const char ch: sentence) if (isalpha(ch)) {
+        letters.set(letter_idx(ch));
     }
-    
-    if (every_letter.all()) return true;
-    return false;
+    return letters.all();
 }
