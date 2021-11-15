@@ -1,7 +1,6 @@
 #include "raindrops.h"
 
 #include <sstream>
-#include <vector>
 
 std::string raindrops::convert(int n) {
     stringstream sounds {};
