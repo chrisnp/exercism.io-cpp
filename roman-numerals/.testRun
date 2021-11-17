@@ -1,0 +1,30 @@
+>cmake -G "MSYS Makefiles" ..
+
+-- The CXX compiler identification is GNU 9.2.0
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/roman-numerals/build
+
+
+>make
+
+Scanning dependencies of target roman-numerals
+
+[ 25%] Building CXX object CMakeFiles/roman-numerals.dir/roman_numerals_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/roman-numerals.dir/roman_numerals.cpp.obj
+[ 75%] Building CXX object CMakeFiles/roman-numerals.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable roman-numerals.exe
+
+[100%] Built target roman-numerals
+
+Scanning dependencies of target test_roman-numerals
+===============================================================================
+All tests passed (18 assertions in 18 test cases)
+
+[100%] Built target test_roman-numerals
