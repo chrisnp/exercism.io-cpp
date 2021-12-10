@@ -1,3 +1,5 @@
+cmake -G "MSYS Makefiles" ..
+
 -- The CXX compiler identification is GNU 9.2.0
 -- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe
 -- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe -- works
@@ -8,6 +10,9 @@
 -- Configuring done
 -- Generating done
 -- Build files have been written to: ~/exercism/cpp/sum-of-multiples/build
+
+
+>make
 
 Scanning dependencies of target sum-of-multiples
 

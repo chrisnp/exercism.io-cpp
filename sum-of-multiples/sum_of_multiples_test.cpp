@@ -1,10 +1,17 @@
 #include "sum_of_multiples.h"
+
+#ifdef EXERCISM_TEST_SUITE
+#include <catch2/catch.hpp>
+#else
 #include "test/catch.hpp"
+#endif
 
 TEST_CASE("sum_to_1_yields_0")
 {
     REQUIRE(0 == sum_of_multiples::to({3, 5}, 0));
 }
+
+#if defined(EXERCISM_RUN_ALL_TESTS)
 
 TEST_CASE("sum_to_4_yields_3")
 {
