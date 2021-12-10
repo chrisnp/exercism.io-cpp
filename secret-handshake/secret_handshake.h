@@ -3,7 +3,6 @@
 #include <vector>
 #include <string>
 
-
 namespace secret_handshake {
 
 constexpr unsigned int wink         = 1U << 0;
@@ -16,4 +15,6 @@ std::vector<std::string> commands(unsigned int);
 
 }  // namespace secret_handshake
 
+#ifndef EXERCISM_RUN_ALL_TESTS
 #define EXERCISM_RUN_ALL_TESTS
+#endif
