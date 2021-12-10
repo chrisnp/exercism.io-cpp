@@ -1,7 +1,6 @@
 #pragma once
 
 #include <vector>
-#include <numeric>
 
 namespace sum_of_multiples {
 
