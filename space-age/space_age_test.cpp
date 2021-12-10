@@ -9,6 +9,7 @@ TEST_CASE("age_in_seconds")
 }
 
 #if defined(EXERCISM_RUN_ALL_TESTS)
+
 namespace
 {
 const double accuracy = 0.005;

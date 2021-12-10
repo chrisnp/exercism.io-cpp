@@ -1,0 +1,21 @@
+>make
+
+Scanning dependencies of target hamming
+
+
+[ 25%] Building CXX object CMakeFiles/hamming.dir/hamming_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/hamming.dir/hamming.cpp.obj
+[ 75%] Building CXX object CMakeFiles/hamming.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable hamming.exe
+
+[100%] Built target hamming
+
+Scanning dependencies of target test_hamming
+
+
+===============================================================================
+All tests passed (9 assertions in 9 test cases)
+
+
+[100%] Built target test_hamming
+

@@ -31,19 +31,25 @@
 /*/*.out
 /*/*.app
 
-# Intermediate build files
+# Project specific
 /*/CMakeCache.*
 /*/CMakeFiles/
 .vscode/
+.ionide/
+boost
 /*/build/
 /*/cmake_install.cmake
 /*/Makefile
-/test/Catch.hpp
 cleanup.sh
 
 # Visual Studio Code workspace
 .ionide/
-cleanup.*
 makelnk.bat
+
 Notes.md 
 HELP.md
+cleanup.sh
+cleanup.ps1
+
+.fake
+

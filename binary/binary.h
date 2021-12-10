@@ -6,5 +6,4 @@
 namespace binary{
 
     int convert(std::string);
-
 }
