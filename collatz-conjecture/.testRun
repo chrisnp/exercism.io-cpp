@@ -1,0 +1,21 @@
+> make
+
+Scanning dependencies of target collatz-conjecture
+
+[ 25%] Building CXX object CMakeFiles/collatz-conjecture.dir/collatz_conjecture_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/collatz-conjecture.dir/collatz_conjecture.cpp.obj
+[ 75%] Building CXX object CMakeFiles/collatz-conjecture.dir/test/tests-main.cpp.obj
+
+[100%] Linking CXX executable collatz-conjecture.exe
+
+[100%] Built target collatz-conjecture
+
+Scanning dependencies of target test_collatz-conjecture
+
+
+===============================================================================
+All tests passed (6 assertions in 6 test cases)
+
+
+[100%] Built target test_collatz-conjecture
+
