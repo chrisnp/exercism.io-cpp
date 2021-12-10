@@ -68,5 +68,4 @@ TEST_CASE("sum_of_empty_list")
     REQUIRE(0 == sum_of_multiples::to({}, 10000));
 }
 
-#if defined(EXERCISM_RUN_ALL_TESTS)
-#endif
+#endif // !EXERCISM_RUN_ALL_TESTS
