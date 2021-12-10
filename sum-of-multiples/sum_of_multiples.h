@@ -1,8 +1,16 @@
-#if !defined(SUM_OF_MULTIPLES_H)
-#define SUM_OF_MULTIPLES_H
+#pragma once
+
+#include <vector>
+#include <numeric>
 
 namespace sum_of_multiples {
 
+typedef std::vector<long> divisors;
+
+long to(divisors factors, long up_to);
+
 }  // namespace sum_of_multiples
 
-#endif // SUM_OF_MULTIPLES_H
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
+#endif
