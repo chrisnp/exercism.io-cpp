@@ -1,8 +1,23 @@
-#if !defined(ANAGRAM_H)
-#define ANAGRAM_H
+#pragma once
+
+#include <string>
+#include <vector>
 
 namespace anagram {
 
+class anagram {
+
+public:
+    anagram(std::string const);
+    std::vector<std::string> matches(std::vector<std::string> const &candidates);
+
+private:
+    std::string subject;
+    std::string normal;
+
+};
 }  // namespace anagram
 
-#endif // ANAGRAM_H
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
+#endif
