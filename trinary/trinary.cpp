@@ -3,7 +3,6 @@
 
 bool valid(std::string const &trinary) noexcept {
     return std::all_of(trinary.begin(), trinary.end(), [](char d) {
-        // return ('0' <= d) && (d <= '2');
         return (d == std::clamp(d, '0', '2'));
     });
 }
