@@ -14,7 +14,6 @@ int trinary::to_decimal(const std::string &trinary) noexcept {
     for (auto d = trinary.begin(); d < trinary.end(); ++d) {
         decimal += decimal << 1;
         // dval = *d - '0';
-        // if (dval > 2) continue;
         decimal += *d - '0';
     }
     return decimal;
