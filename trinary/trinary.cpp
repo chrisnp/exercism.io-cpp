@@ -13,7 +13,6 @@ int trinary::to_decimal(const std::string &trinary) noexcept {
     int decimal {0};
     for (auto d = trinary.begin(); d < trinary.end(); ++d) {
         decimal += decimal << 1;
-        // dval = *d - '0';
         decimal += *d - '0';
     }
     return decimal;
