@@ -11,8 +11,7 @@ int trinary::to_decimal(const std::string &trinary) noexcept {
     if (!valid(trinary)) return 0;
     int decimal {0};
     for (auto d = trinary.begin(); d < trinary.end(); ++d) {
-        decimal += decimal << 1;
-        decimal += *d - '0';
+        decimal += (decimal << 1) + *d - '0';
     }
     return decimal;
 }
