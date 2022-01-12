@@ -1,8 +1,14 @@
-#if !defined(TRINARY_H)
-#define TRINARY_H
+#pragma once
+
+#include <string>
 
 namespace trinary {
 
+int to_decimal(const std::string&) noexcept;
+
 }  // namespace trinary
 
-#endif // TRINARY_H
+
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
+#endif
