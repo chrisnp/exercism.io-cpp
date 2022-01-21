@@ -1,5 +1,6 @@
 #include "all_your_base.h"
 
-namespace all_your_base {
+use namespace std;
 
-}  // namespace all_your_base
+vector<int> all_your_base::convert(int in_base, vector<int> &num, int out_base) {
+}
