@@ -1,0 +1,14 @@
+>cmake -G "MSYS Makefiles" ..
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/all-your-base/build
+
+
+>make
+
+[100%] Built target all-your-base
+===============================================================================
+All tests passed (17 assertions in 17 test cases)
+
+[100%] Built target test_all-your-base
