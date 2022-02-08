@@ -1,8 +1,6 @@
-#if !defined(BINARY_H)
-#define BINARY_H
+#pragma once
 
 #include <string>
-#include <cmath>
 
 namespace binary{
 
@@ -10,4 +8,6 @@ namespace binary{
 
 }
 
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
 #endif
