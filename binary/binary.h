@@ -1,9 +1,13 @@
 #pragma once
 
 #include <string>
-#include <cmath>
 
 namespace binary{
 
     int convert(std::string);
+
 }
+
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
+#endif
