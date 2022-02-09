@@ -45,3 +45,32 @@ All tests passed (9 assertions in 9 test cases)
 
 [100%] Built target test_binary
 
+
+
+>cmake -G "MSYS Makefiles" ..
+-- The CXX compiler identification is GNU 9.2.0
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/binary/build
+
+>make
+Scanning dependencies of target binary
+
+[ 25%] Building CXX object CMakeFiles/binary.dir/binary_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/binary.dir/binary.cpp.obj
+[ 75%] Building CXX object CMakeFiles/binary.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable binary.exe
+
+[100%] Built target binary
+
+Scanning dependencies of target test_binary
+===============================================================================
+All tests passed (9 assertions in 9 test cases)
+
+[100%] Built target test_binary
