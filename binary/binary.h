@@ -4,7 +4,7 @@
 
 namespace binary{
 
-    int convert(std::string);
+long convert(std::string);
 
 }
 
