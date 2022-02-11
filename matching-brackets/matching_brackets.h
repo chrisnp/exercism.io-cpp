@@ -1,8 +1,13 @@
-#if !defined(MATCHING_BRACKETS_H)
-#define MATCHING_BRACKETS_H
+#pragma once
+
+#include <string>
 
 namespace matching_brackets {
 
+bool check(std::string const &);
+
 }  // namespace matching_brackets
 
-#endif // MATCHING_BRACKETS_H
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
+#endif
