@@ -1,5 +1,32 @@
 #include "matching_brackets.h"
 
-namespace matching_brackets {
+#include <stack>
+#include <stdexcept>
 
-}  // namespace matching_brackets
+bool matching_brackets::check(std::string const &str) {
+    constexpr auto closing_bracket = [](const char b) -> char {
+        switch (b) {
+            case '[': return ']';
+            case '{': return '}';
+            case '(': return ')';
+        }
+        throw std::domain_error("invalid bracket");
+    };
+    std::stack<char> stack {};
+    for (auto ch : str) {
+        switch (ch) {
+            case '[':
+            case '{':
+            case '(':
+                stack.push(closing_bracket(ch));
+                break;
+            case ']':
+            case '}':
+            case ')':
+                if (stack.size() == 0 || stack.top() != ch) 
+                    return false;
+                stack.pop();
+        }
+    }
+    return stack.empty();
+}
