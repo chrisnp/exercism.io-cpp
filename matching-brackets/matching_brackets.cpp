@@ -9,8 +9,8 @@ bool matching_brackets::check(std::string const &str) {
             case '[': return ']';
             case '{': return '}';
             case '(': return ')';
+            default : throw std::domain_error("invalid bracket");
         }
-        throw std::domain_error("invalid bracket");
     };
     std::stack<char> stack {};
     for (auto ch : str) {
@@ -26,6 +26,7 @@ bool matching_brackets::check(std::string const &str) {
                 if (stack.size() == 0 || stack.top() != ch) 
                     return false;
                 stack.pop();
+            default: continue;
         }
     }
     return stack.empty();
