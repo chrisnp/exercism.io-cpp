@@ -1,8 +1,13 @@
-#if !defined(LUHN_H)
-#define LUHN_H
+#pragma once
+
+#include <string>
 
 namespace luhn {
 
+bool valid(std::string);
+
 }  // namespace luhn
 
-#endif // LUHN_H
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
+#endif
