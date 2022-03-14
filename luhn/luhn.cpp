@@ -11,8 +11,7 @@ bool luhn::valid( string num ) {
     for (unsigned int i = 0; i < num.length(); ++i) {
         if (isdigit(num[i])) {
             int d = int( num[i] ) - '0';
-            d = i % 2 != 0 ? (d > 4 ? (d * 2) - 9 : d * 2) : d;
-            csum += d;
+            csum += i % 2 != 0 ? (d > 4 ? (d * 2) - 9 : d * 2) : d;
         }
         else return false;
     }
