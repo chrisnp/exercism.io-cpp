@@ -28,3 +28,20 @@ Scanning dependencies of target test_luhn
 All tests passed (17 assertions in 17 test cases)
 
 [100%] Built target test_luhn
+
+
+
+>cmake -G 'MSYS Makefiles' ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/luhn/build
+
+
+>make
+
+[ 25%] Linking CXX executable luhn.exe
+[100%] Built target luhn
+===============================================================================
+All tests passed (17 assertions in 17 test cases)
+
+[100%] Built target test_luhn
