@@ -17,7 +17,7 @@ vector<unsigned int> all_your_base::convert(unsigned int in_base,
     int sum {0}; int pos {0};
     for (auto digit = in_representation.rbegin(); digit != in_representation.rend(); ++digit) {
         if (*digit >= in_base) 
-            throw invalid_argument("invalid digit");
+            throw invalid_argument("invalid digit in input");
         sum += *digit * pow(in_base, pos);
         ++pos;
     }
