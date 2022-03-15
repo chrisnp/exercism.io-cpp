@@ -1,8 +1,14 @@
-#if !defined(SERIES_H)
-#define SERIES_H
+#pragma once
+
+#include <string>
+#include <vector>
 
 namespace series {
 
+
+
 }  // namespace series
 
-#endif // SERIES_H
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
+#endif
