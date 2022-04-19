@@ -1,8 +1,13 @@
-#if !defined(WORD_COUNT_H)
-#define WORD_COUNT_H
+#pragma once
+#include <map>
+#include <string>
 
 namespace word_count {
 
+const std::map<std::string, int> words(const std::string&);
+
 }  // namespace word_count
 
-#endif // WORD_COUNT_H
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
+#endif
