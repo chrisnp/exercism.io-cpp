@@ -1,0 +1,28 @@
+>cmake -G 'MSYS Makefiles' ..
+
+-- The CXX compiler identification is GNU 9.2.0
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/word-count/build
+
+
+>make
+
+Scanning dependencies of target word-count
+[ 25%] Building CXX object CMakeFiles/word-count.dir/word_count_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/word-count.dir/word_count.cpp.obj
+[ 75%] Building CXX object CMakeFiles/word-count.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable word-count.exe
+
+[100%] Built target word-count
+Scanning dependencies of target test_word-count
+===============================================================================
+All tests passed (13 assertions in 13 test cases)
+
+[100%] Built target test_word-count
