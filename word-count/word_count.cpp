@@ -3,11 +3,11 @@
 
 using namespace std;
 
-bool delim(const char &c) {
-    return c == ' ' || c == '\n' || c == ',';
+bool delim( const char &c ) {
+    return c == ' ' || c == ',' || c == '\n';
 }
 
-const map<string, int> word_count::words(const string &text) {
+const map<string, int> word_count::words( const string &text ) {
     map<string, int> wordcount {};
     vector<char> wordchars {};
     for ( unsigned int i = 0; i < text.length(); i++ ) {
@@ -22,7 +22,7 @@ const map<string, int> word_count::words(const string &text) {
         }
         else continue;
     }
-    if ( !wordchars.empty()) 
+    if ( !wordchars.empty() ) 
         wordcount[string(wordchars.begin(), wordchars.end())] += 1;
     return wordcount;
 }
