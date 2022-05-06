@@ -1,5 +1,11 @@
 #include "atbash_cipher.h"
 
-namespace atbash_cipher {
+using namespace std;
 
-}  // namespace atbash_cipher
+string atbash_cipher::encode(const string &plain) {
+    string cipher {};
+}
+
+string atbash_cipher::decode(const string &cipher) {
+
+}
