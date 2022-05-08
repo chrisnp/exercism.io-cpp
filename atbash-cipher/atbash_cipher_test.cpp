@@ -68,4 +68,22 @@ TEST_CASE("decode_all_the_letters")
     REQUIRE("thequickbrownfoxjumpsoverthelazydog" ==
                         atbash_cipher::decode("gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt"));
 }
+
+TEST_CASE("encode_numbers_only")
+{
+    REQUIRE("12345 67890 98765 4321" == atbash_cipher::encode("123,456,789,0! 98.765 4,321"));
+}
+
+TEST_CASE("decode_numbers_only")
+{
+    REQUIRE("1234567890987654321" == atbash_cipher::decode("12345 67890 98765 4321"));
+}
+
+TEST_CASE("non-alphanumeric_character_in_a_ciphertext_is_an_error") 
+{
+    REQUIRE_THROWS_AS(
+        atbash_cipher::decode("gsvjf rxpyi ldm!l c;fnk hlevi gsvoz abwlt"), 
+        std::domain_error
+    );
+}
 #endif
