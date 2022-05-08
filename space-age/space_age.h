@@ -9,17 +9,20 @@ class space_age {
     uint_fast64_t age;
 
 public:
-    space_age(uint_fast64_t);
+    explicit space_age(const uint_fast64_t);
     uint_fast64_t seconds() const;
-    float on_mercury() const;
-    float on_venus() const;
-    float on_earth() const;
-    float on_mars() const;
-    float on_jupiter() const;
-    float on_saturn() const;
-    float on_uranus() const;
-    float on_neptune() const;
-};
-}
+    float on_mercury() const noexcept;
+    float on_venus() const noexcept;
+    float on_earth() const noexcept;
+    float on_mars() const noexcept;
+    float on_jupiter() const noexcept;
+    float on_saturn() const noexcept;
+    float on_uranus() const noexcept;
+    float on_neptune() const noexcept;
 
+};
+} // namespace space_age
+
+#ifndef EXERCISM_RUN_ALL_TESTS
 #define EXERCISM_RUN_ALL_TESTS
+#endif

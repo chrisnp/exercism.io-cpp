@@ -1,0 +1,29 @@
+>cmake -G 'MSYS Makefiles' ..
+
+-- The CXX compiler identification is GNU 9.2.0
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/atbash-cipher/build
+
+>make
+
+Scanning dependencies of target atbash-cipher
+
+[ 25%] Building CXX object CMakeFiles/atbash-cipher.dir/atbash_cipher_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/atbash-cipher.dir/atbash_cipher.cpp.obj
+[ 75%] Building CXX object CMakeFiles/atbash-cipher.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable atbash-cipher.exe
+
+[100%] Built target atbash-cipher
+
+Scanning dependencies of target test_atbash-cipher
+===============================================================================
+All tests passed (15 assertions in 15 test cases)
+
+[100%] Built target test_atbash-cipher
