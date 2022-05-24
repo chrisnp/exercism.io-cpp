@@ -1,0 +1,29 @@
+>cmake -G "MSYS Makefiles" ..
+
+-- The CXX compiler identification is GNU 9.2.0
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/beer-song/build
+
+
+>make
+
+Scanning dependencies of target beer-song
+[ 25%] Building CXX object CMakeFiles/beer-song.dir/beer_song_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/beer-song.dir/beer_song.cpp.obj
+[ 75%] Building CXX object CMakeFiles/beer-song.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable beer-song.exe
+
+[100%] Built target beer-song
+
+Scanning dependencies of target test_beer-song
+===============================================================================
+All tests passed (5 assertions in 5 test cases)
+
+[100%] Built target test_beer-song
