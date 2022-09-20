@@ -9,7 +9,7 @@ class anagram {
 
 public:
     anagram(std::string const);
-    std::vector<std::string> matches(std::vector<std::string> const &candidates);
+    std::vector<std::string> matches(std::vector<std::string> const &);
 
 private:
     std::string subject;
