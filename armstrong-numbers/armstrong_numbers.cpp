@@ -1,10 +1,9 @@
 #include "armstrong_numbers.h"
-
-using namespace std;
+#include <cmath>
+#include <string>
 
 bool armstrong_numbers::is_armstrong_number(const int & num) {
-
-    const string digits { to_string(num) };
+    const std::string digits { std::to_string(num) };
 
     int num_digits { (int) digits.length() }, 
         sum_digits_raised {0};

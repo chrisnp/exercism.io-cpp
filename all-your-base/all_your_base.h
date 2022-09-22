@@ -4,7 +4,8 @@
 
 namespace all_your_base {
 
-std::vector<unsigned int> convert(unsigned int, const std::vector<unsigned int>&, unsigned int);
+using namespace std;
+vector<unsigned int> convert(unsigned int, const vector<unsigned int>&, unsigned int);
 
 }  // namespace all_your_base
 

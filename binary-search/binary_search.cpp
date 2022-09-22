@@ -8,7 +8,7 @@ using namespace std;
 int binary_search::find( vector<int> haystaq, int needle ) {
     assert( is_sorted( haystaq.cbegin(), haystaq.cend() ) );
 
-    int lo = 0, hi = haystaq.size() - 1;
+    int lo {0}, hi = haystaq.size() - 1;
     while( lo <= hi ) {
         int mid = (lo + hi) >> 1;
         if( haystaq.at(mid) == needle )

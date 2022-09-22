@@ -6,12 +6,10 @@ using std::vector;
 
 anagram::anagram::anagram(const string word) {
     this->subject = word;
-    transform(this->subject.begin(), 
-              this->subject.end(),
+    transform(this->subject.begin(), this->subject.end(),
               this->subject.begin(), ::tolower);
     this->normal = this->subject;
-    std::sort(this->normal.begin(), 
-              this->normal.end());
+    std::sort(this->normal.begin(), this->normal.end());
 }
 
 vector<string> anagram::anagram::matches(vector<string> const &candidates) {
