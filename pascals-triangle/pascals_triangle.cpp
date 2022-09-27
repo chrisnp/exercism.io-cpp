@@ -3,7 +3,6 @@
 using namespace std;
 
 const pascals_triangle::ptriangle_t pascals_triangle::generate_rows(int n) {
-
     ptriangle_t ptriangle {};
     for (int i = 0; i < n; i++) {
         vector<int> row {};
