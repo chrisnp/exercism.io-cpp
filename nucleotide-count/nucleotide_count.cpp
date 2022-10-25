@@ -1,6 +1,5 @@
 #include "nucleotide_count.h"
 
-
 nucleotide_count::counter::counter(std::string strand) {
     for (auto &s : strand) {
         switch(s) {
