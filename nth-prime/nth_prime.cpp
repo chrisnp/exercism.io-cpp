@@ -1,7 +1,6 @@
 #include "nth_prime.h"
 
 unsigned long nth_prime::nth(unsigned long num) {
-
     using namespace std;
 
     if (num == 0) {
@@ -19,9 +18,7 @@ unsigned long nth_prime::nth(unsigned long num) {
                 continue;
             } 
         }
-        if (is_prime) {
-            primes.push_back(candidate);
-        }
+        if (is_prime) primes.push_back(candidate);
         candidate += 2;
     }
     return primes[num - 1];

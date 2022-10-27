@@ -8,4 +8,6 @@ namespace sieve {
 
 }  // namespace sieve
 
+#ifndef EXERCISM_RUN_ALL_TESTS
 #define EXERCISM_RUN_ALL_TESTS
+#endif
