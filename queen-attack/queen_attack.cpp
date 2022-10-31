@@ -2,10 +2,9 @@
 #include <sstream>
 
 
-queen_attack::chess_board::chess_board(const square &white, 
-                                       const square &black) : 
-                                       white_queen { white }, 
-                                       black_queen { black } {
+queen_attack::chess_board::chess_board(const square &white, const square &black) : 
+                                       white_queen { white }, black_queen { black } 
+{
     if (black_queen == white_queen) {
         throw std::domain_error("Both queens on same square");
     } 
@@ -19,13 +18,13 @@ const square &queen_attack::chess_board::white() const noexcept
 
 queen_attack::chess_board::operator std::string() const {
     std::stringstream board;
-    for (int r = 0; r < 8; r++) {
-        for (int f = 0; f < 8; f++) {
-            if (f > 0) board << ' ';
-            square p = {r, f};
-            if (p == black_queen) board << 'B';
+    for (int rank = 0; rank < 8; rank++) {
+        for (int file = 0; file < 8; file++) {
+            if (file > 0) board << ' ';
+            square position = {rank, file};
+            if (position == black_queen) board << 'B';
             else 
-            if (p == white_queen) board << 'W';
+            if (position == white_queen) board << 'W';
             else board << '_'; 
         }
         board << '\n';
@@ -34,9 +33,8 @@ queen_attack::chess_board::operator std::string() const {
 }
 
 bool queen_attack::chess_board::can_attack() const noexcept {
-    int drank = abs(white_queen.first - black_queen.first);
-    int dfile = abs(white_queen.second - black_queen.second);
+    int drank = abs(std::get<0>(white_queen) - std::get<0>(black_queen));
+    int dfile = abs(std::get<1>(white_queen) - std::get<1>(black_queen));
     
-    return drank * dfile == 0 ||
-           drank / dfile == 1;
+    return drank * dfile == 0 || drank / dfile == 1;
 }

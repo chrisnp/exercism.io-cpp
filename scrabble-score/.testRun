@@ -11,3 +11,34 @@
 All tests passed (6 assertions in 6 test cases)
 
 [100%] Built target test_scrabble-score
+
+
+
+>cmake -G 'MSYS Makefiles' ..
+
+-- The CXX compiler identification is GNU 9.2.0
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/scrabble-score/build
+
+>make
+
+Scanning dependencies of target scrabble-score
+[ 25%] Building CXX object CMakeFiles/scrabble-score.dir/scrabble_score_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/scrabble-score.dir/scrabble_score.cpp.obj
+[ 75%] Building CXX object CMakeFiles/scrabble-score.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable scrabble-score.exe
+
+[100%] Built target scrabble-score
+
+Scanning dependencies of target test_scrabble-score
+===============================================================================
+All tests passed (6 assertions in 6 test cases)
+
+[100%] Built target test_scrabble-score
