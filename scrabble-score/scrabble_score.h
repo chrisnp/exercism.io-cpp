@@ -20,5 +20,6 @@ int score(const std::string&);
 
 }  // namespace scrabble_score
 
-
+#ifndef EXERCISM_RUN_ALL_TESTS
 #define EXERCISM_RUN_ALL_TESTS
+#endif
