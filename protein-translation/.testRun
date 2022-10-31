@@ -27,3 +27,34 @@ Scanning dependencies of target test_protein-translation
 All tests passed (23 assertions in 23 test cases)
 
 [100%] Built target test_protein-translation
+
+
+
+>cmake -G 'MSYS Makefiles' ..
+
+-- The CXX compiler identification is GNU 9.2.0
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe
+-- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ~/exercism/cpp/protein-translation/build
+
+>make
+
+Scanning dependencies of target protein-translation
+[ 25%] Building CXX object CMakeFiles/protein-translation.dir/protein_translation_test.cpp.obj
+[ 50%] Building CXX object CMakeFiles/protein-translation.dir/protein_translation.cpp.obj
+[ 75%] Building CXX object CMakeFiles/protein-translation.dir/test/tests-main.cpp.obj
+[100%] Linking CXX executable protein-translation.exe
+
+[100%] Built target protein-translation
+
+Scanning dependencies of target test_protein-translation
+===============================================================================
+All tests passed (23 assertions in 23 test cases)
+
+[100%] Built target test_protein-translation
