@@ -11,4 +11,6 @@ vector<string> proteins(const string&);
  
 }  // namespace protein_translation
 
+#ifndef EXERCISM_RUN_ALL_TESTS
 #define EXERCISM_RUN_ALL_TESTS
+#endif
