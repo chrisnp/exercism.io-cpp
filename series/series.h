@@ -5,8 +5,7 @@
 
 namespace series {
 
-std::vector<int> digits(std::string const &);
-std::vector<std::vector<int>> slice(std::string const &, size_t);
+std::vector<std::string> slice(std::string const &, uint32_t);
 
 }  // namespace series
 
