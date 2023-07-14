@@ -20,6 +20,13 @@ public:
     const square &white() const noexcept;
     const square &black() const noexcept;
 
+    inline auto on_board(square const& legal) {
+        return 0 <= legal.first && 
+               7 >= legal.first && 
+               0 <= legal.second && 
+               7 >= legal.second;
+    }
+
     bool can_attack() const noexcept;
     
 private:
