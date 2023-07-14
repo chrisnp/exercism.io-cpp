@@ -7,6 +7,9 @@ queen_attack::chess_board::chess_board(const square &white, const square &black)
 {
     if (black_queen == white_queen) {
         throw std::domain_error("Both queens on same square");
+    }
+    if (!on_board(white_queen) || !on_board(black_queen)) {
+        throw std::domain_error("Some queen not on board");
     } 
 }
 
