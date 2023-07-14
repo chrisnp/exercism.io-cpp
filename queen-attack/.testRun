@@ -1,70 +1,3 @@
->cmake -G "MSYS Makefiles" ..
-
--- The CXX compiler identification is GNU 9.2.0
--- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe
--- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done
--- Generating done
--- Build files have been written to: ~/exercism/cpp/queen-attack/build
-
-
->make
-
-Scanning dependencies of target queen-attack
-
-[ 25%] Building CXX object CMakeFiles/queen-attack.dir/queen_attack_test.cpp.obj
-[ 50%] Building CXX object CMakeFiles/queen-attack.dir/queen_attack.cpp.obj
-[ 75%] Building CXX object CMakeFiles/queen-attack.dir/test/tests-main.cpp.obj
-[100%] Linking CXX executable queen-attack.exe
-
-[100%] Built target queen-attack
-
-Scanning dependencies of target test_queen-attack
-===============================================================================
-All tests passed (18 assertions in 12 test cases)
-
-[100%] Built target test_queen-attack
-
-
-
->cmake -G "MSYS Makefiles" ..
-
--- The CXX compiler identification is GNU 9.2.0
--- Check for working CXX compiler: C:/msys64/mingw64/bin/g++.exe
--- Check for working CXX compiler: C:/msys64/mingw64/bin/g++.exe -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/Chris/exercism/cpp/queen-attack/build
-
-
->make
-
-Scanning dependencies of target queen-attack
-
-[ 25%] Building CXX object CMakeFiles/queen-attack.dir/queen_attack_test.cpp.obj
-[ 50%] Building CXX object CMakeFiles/queen-attack.dir/queen_attack.cpp.obj
-[ 75%] Building CXX object CMakeFiles/queen-attack.dir/test/tests-main.cpp.obj
-[100%] Linking CXX executable queen-attack.exe
-
-[100%] Built target queen-attack
-
-Scanning dependencies of target test_queen-attack
-
-===============================================================================
-All tests passed (18 assertions in 12 test cases)
-
-[100%] Built target test_queen-attack
-
-
-
 >cmake -G 'MSYS Makefiles' ..
 
 -- The CXX compiler identification is GNU 9.2.0
@@ -91,5 +24,23 @@ Scanning dependencies of target queen-attack
 Scanning dependencies of target test_queen-attack
 ===============================================================================
 All tests passed (18 assertions in 12 test cases)
+
+[100%] Built target test_queen-attack
+
+
+
+cmake -G "Unix Makefiles" ..
+
+-- Configuring done (0.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: ~/exercism/cpp/queen-attack/build
+
+>make
+
+[ 25%] Building CXX object CMakeFiles/queen-attack.dir/test/tests-main.cpp.o
+[ 50%] Linking CXX executable queen-attack.exe
+[100%] Built target queen-attack
+===============================================================================
+All tests passed (15 assertions in 14 test cases)
 
 [100%] Built target test_queen-attack
