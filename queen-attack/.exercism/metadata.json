@@ -1,9 +1,1 @@
-{
-    "track": "cpp",
-    "exercise": "queen-attack",
-    "id": "e2a7aaa02aca43c1a480d89d80738300",
-    "url": "https://exercism.io/tracks/cpp/exercises/queen-attack/solutions/e2a7aaa02aca43c1a480d89d80738300",
-    "handle": "heptalophos",
-    "is_requester": true,
-    "auto_approve": false
-}
+{"track":"cpp","exercise":"queen-attack","id":"e2a7aaa02aca43c1a480d89d80738300","url":"https://exercism.org/tracks/cpp/exercises/queen-attack","handle":"heptalophos","is_requester":true,"auto_approve":false}
