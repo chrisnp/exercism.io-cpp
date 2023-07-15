@@ -1,5 +1,4 @@
 #pragma once
-
 #include <string>
 #include <utility>
 
@@ -17,12 +16,12 @@ public:
 
     explicit operator std::string() const;
 
-    const square &white() const noexcept;
     const square &black() const noexcept;
+    const square &white() const noexcept;
 
-    inline auto on_board(square const& legal) {
+    constexpr auto legal_position(square const& legal) {
         return 0 <= legal.first && 
-               7 >= legal.first && 
+               7 >= legal.first &&
                0 <= legal.second && 
                7 >= legal.second;
     }
