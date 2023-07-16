@@ -60,3 +60,29 @@ Scanning dependencies of target test_nucleotide-count
 All tests passed (9 assertions in 9 test cases)
 
 [100%] Built target test_nucleotide-count
+
+
+
+>cmake -G "UNIX Makefiles" ..
+
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.1s)
+-- Generating done (0.2s)
+-- Build files have been written to: ~/exercism/cpp/nucleotide-count/build
+
+>make
+
+[ 25%] Building CXX object CMakeFiles/nucleotide-count.dir/nucleotide_count_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/nucleotide-count.dir/nucleotide_count.cpp.o
+[ 75%] Building CXX object CMakeFiles/nucleotide-count.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable nucleotide-count.exe
+[100%] Built target nucleotide-count
+===============================================================================
+All tests passed (5 assertions in 5 test cases)
+
+[100%] Built target test_nucleotide-count
