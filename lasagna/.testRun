@@ -1,0 +1,22 @@
+cmake -G "Unix Makefiles" ..
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/lasagna/build
+
+
+>make
+
+[ 33%] Building CXX object CMakeFiles/lasagna.dir/lasagna_test.cpp.o
+[ 66%] Building CXX object CMakeFiles/lasagna.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable lasagna.exe
+[100%] Built target lasagna
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+[100%] Built target test_lasagna
