@@ -1,0 +1,25 @@
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (1.9s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/clock/build
+
+
+>make
+
+[ 25%] Building CXX object CMakeFiles/clock.dir/clock_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/clock.dir/clock.cpp.o
+[ 75%] Building CXX object CMakeFiles/clock.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable clock.exe
+
+[100%] Built target clock
+===============================================================================
+All tests passed (50 assertions in 3 test cases)
+
+[100%] Built target test_clock
