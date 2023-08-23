@@ -1,9 +1,7 @@
 #include "beer_song.h"
 #include <sstream>
 
-using namespace std;
-
-string beer_song::verse(int n) {
+std::string beer_song::verse(int n) {
     switch (n) {
         case 0:
             return  "No more bottles of beer on the wall, " 
@@ -21,7 +19,7 @@ string beer_song::verse(int n) {
                     "and pass it around, 1 bottle "
                     "of beer on the wall.\n";
         default:
-            ostringstream verses;
+            std::ostringstream verses;
             verses  << n     << " bottles of beer on the wall, " 
                     << n     << " bottles of beer.\n"
                                 "Take one down and pass it around, "
@@ -30,8 +28,8 @@ string beer_song::verse(int n) {
     }
 }
 
-string beer_song::sing(int start, int end) {
-    ostringstream verses;
+std::string beer_song::sing(int start, int end) {
+    std::ostringstream verses;
     for( int n = start; n >= end; --n ) {
         if( n != start ) verses << '\n';
         verses << verse(n);
@@ -39,6 +37,6 @@ string beer_song::sing(int start, int end) {
     return verses.str();
 }
 
-string beer_song::sing(int start) {
+std::string beer_song::sing(int start) {
     return sing(start, 0);
 }
