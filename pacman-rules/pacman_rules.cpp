@@ -3,20 +3,21 @@
 // and is touching a ghost.
 bool can_eat_ghost(bool power_pellet_active, bool touching_ghost) {
     if (power_pellet_active) return touching_ghost;
-    return false;
+    return 0;
 }
 
 // score returns a boolean value if Pac-Man scored. The function should 
 // return true if Pac-Man is touching a power pellet or a dot.
 bool scored(bool touching_power_pellet, bool touching_dot) {
-    return touching_power_pellet || touching_dot;
+    if (touching_power_pellet) return 1;
+    return touching_dot;
 }
 
 // lost returns a boolean value if Pac-Man loses. The function should 
 // return true if Pac-Man is touching a ghost and does not have a power pellet active.
 bool lost(bool power_pellet_active, bool touching_ghost) {
     if (touching_ghost) return !power_pellet_active;
-    return false;
+    return 0;
 }
 
 // won returns a boolean value if Pac-Man wins. The function should return true
@@ -27,7 +28,7 @@ bool won(bool has_eaten_all_dots,
 {
     if (has_eaten_all_dots) return 
         !lost(power_pellet_active, touching_ghost);
-    return false;
+    return 0;
 }
 
 #ifndef EXERCISM_RUN_ALL_TESTS

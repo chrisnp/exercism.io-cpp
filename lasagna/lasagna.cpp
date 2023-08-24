@@ -16,3 +16,7 @@ int preparationTime(int numberOfLayers) {
 int elapsedTime(int numberOfLayers, int actualMinutesInOven) {
     return preparationTime(numberOfLayers) + actualMinutesInOven;
 }
+
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
+#endif
