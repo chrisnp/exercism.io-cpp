@@ -1,0 +1,23 @@
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (1.9s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/pacman-rules/build
+
+
+>make
+
+[ 33%] Building CXX object CMakeFiles/pacman-rules.dir/pacman_rules_test.cpp.o
+[ 66%] Building CXX object CMakeFiles/pacman-rules.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable pacman-rules.exe
+[100%] Built target pacman-rules
+===============================================================================
+All tests passed (13 assertions in 13 test cases)
+
+[100%] Built target test_pacman-rules
