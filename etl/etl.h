@@ -3,14 +3,16 @@
 #include <map>
 #include <vector>
 
+#define _tolower(__c) ((unsigned char)(__c) - 'A' + 'a')
+
 namespace etl {
-    typedef std::map<int, std::vector<char>> legacy_data;
-    typedef std::map<char, int> shiny_new_system;
+    using legacy_data = std::map<int, std::vector<char>>;
+    using shiny_new_system = std::map<char, int> ;
     inline shiny_new_system transform(legacy_data const &legacy_scores) {
         shiny_new_system new_system {};
         for (auto legacy_score : legacy_scores) 
             for (auto letter : legacy_score.second) 
-                new_system[std::tolower(letter)] = legacy_score.first;
+                new_system[_tolower(letter)] = legacy_score.first;
         return new_system;
     }
 }  // namespace etl
