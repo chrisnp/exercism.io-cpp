@@ -3,7 +3,7 @@
 
 using namespace std;
 
-constexpr auto delim( const char &c ) -> bool {
+constexpr auto delim( const char &c ) noexcept -> bool {
     return c == ' ' || c == ',' || c == '\n';
 }
 
