@@ -1,9 +1,10 @@
 #pragma once
-
 #include <map>
 #include <vector>
 
-#define _tolower(__c) ((unsigned char)(__c) - 'A' + 'a')
+constexpr auto _tolower(const char &__c) noexcept -> unsigned char { 
+    return __c - 'A' + 'a'; 
+} 
 
 namespace etl {
     using legacy_data = std::map<int, std::vector<char>>;
