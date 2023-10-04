@@ -4,7 +4,7 @@
 using namespace std;
 using alphabet = bitset<pangram::ALPHABET_SIZE>;
 
-constexpr int letter_idx(char ch) noexcept {
+constexpr auto letter_idx(char ch) noexcept -> int {
     return tolower(ch) - 'a';
 }
 
