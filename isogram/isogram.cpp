@@ -2,9 +2,10 @@
 
 #include <set>
 
+using namespace std;
+
 bool isogram::is_isogram(const string &word) {
     set<char> isogram {};
-    
     for(char ch : word) {
         if (!isalpha(ch)) continue;
         ch = tolower(ch);
