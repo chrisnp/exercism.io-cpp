@@ -19,7 +19,7 @@ public:
     const square &black() const noexcept;
     const square &white() const noexcept;
 
-    constexpr auto legal_position(square const& legal) {
+    constexpr auto legal_position(square const& legal) noexcept -> bool {
         return 0 <= legal.first && 
                7 >= legal.first &&
                0 <= legal.second && 
