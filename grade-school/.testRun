@@ -1,23 +1,4 @@
->cmake -G "Unix Makefiles" ..
-
--- Configuring done
--- Generating done
--- Build files have been written to: ~/exercism/cpp/grade-school/build
-
-
->make
-
-[100%] Built target grade-school
-
-===============================================================================
-All tests passed (8 assertions in 8 test cases)
-
-[100%] Built target test_grade-school
-
-
-
 >cmake -G 'MSYS Makefiles' ..
-
 -- The CXX compiler identification is GNU 9.2.0
 -- Check for working CXX compiler: msys64/mingw64/bin/g++.exe
 -- Check for working CXX compiler: msys64/mingw64/bin/g++.exe -- works
@@ -30,7 +11,6 @@ All tests passed (8 assertions in 8 test cases)
 -- Build files have been written to: ~/exercism/cpp/grade-school/build
 
 >make
-
 Scanning dependencies of target grade-school
 [ 25%] Building CXX object CMakeFiles/grade-school.dir/grade_school_test.cpp.obj
 [ 50%] Building CXX object CMakeFiles/grade-school.dir/grade_school.cpp.obj

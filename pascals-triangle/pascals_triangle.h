@@ -9,10 +9,8 @@ constexpr auto factorial (const int n) noexcept -> int {
 constexpr auto binomial (int n, int k) noexcept -> int {
     return factorial(n) / (factorial(k) * factorial(n - k));
 }
-
 using ptriangle_t = std::vector<std::vector<int>>;
 const ptriangle_t generate_rows(int);
-
 } // namespace pascals_triangle 
 
 

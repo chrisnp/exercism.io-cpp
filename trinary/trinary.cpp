@@ -1,7 +1,7 @@
 #include "trinary.h"
 #include <algorithm>
 
-bool valid(std::string const &trinary) noexcept {
+auto valid(std::string const &trinary) noexcept -> bool {
     return std::all_of(trinary.begin(), trinary.end(), [](char d) {
         return (d == std::clamp(d, '0', '2'));
     });
