@@ -45,3 +45,27 @@ All tests passed (9 assertions in 9 test cases)
 All tests passed (9 assertions in 9 test cases)
 
 [100%] Built target test_trinary
+
+
+
+>cmake -G "Unix Makefiles" ..
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (1.9s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/trinary/build
+
+>make
+[ 25%] Building CXX object CMakeFiles/trinary.dir/trinary_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/trinary.dir/trinary.cpp.o
+[ 75%] Building CXX object CMakeFiles/trinary.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable trinary.exe
+[100%] Built target trinary
+===============================================================================
+All tests passed (9 assertions in 9 test cases)
+
+[100%] Built target test_trinary
