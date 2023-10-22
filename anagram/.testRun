@@ -11,18 +11,44 @@
 -- Generating done
 -- Build files have been written to: ~/exercism/cpp/anagram/build
 
-
 >make
-
 Scanning dependencies of target anagram
 [ 25%] Building CXX object CMakeFiles/anagram.dir/anagram_test.cpp.obj
 [ 50%] Building CXX object CMakeFiles/anagram.dir/anagram.cpp.obj
 [ 75%] Building CXX object CMakeFiles/anagram.dir/test/tests-main.cpp.obj
 [100%] Linking CXX executable anagram.exe
-
 [100%] Built target anagram
 
 Scanning dependencies of target test_anagram
+===============================================================================
+All tests passed (14 assertions in 14 test cases)
+
+[100%] Built target test_anagram
+
+
+
+===============================================================================
+Sun Oct 22 20:05:07 GTBDT 2023
+===============================================================================
+cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Boost: /mingw64/lib/cmake/Boost-1.83.0/BoostConfig.cmake (found suitable version "1.83.0", minimum required is "1.59")  
+-- Configuring done (2.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/anagram/build
+
+>make
+[ 25%] Building CXX object CMakeFiles/anagram.dir/anagram_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/anagram.dir/anagram.cpp.o
+[ 75%] Building CXX object CMakeFiles/anagram.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable anagram.exe
+[100%] Built target anagram
 ===============================================================================
 All tests passed (14 assertions in 14 test cases)
 
