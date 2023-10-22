@@ -14,9 +14,7 @@
 -- Generating done
 -- Build files have been written to: ~/exercism/cpp/gigasecond/build
 
-
 >make 
-
 Scanning dependencies of target gigasecond
 [ 25%] Building CXX object CMakeFiles/gigasecond.dir/gigasecond_test.cpp.o
 [ 50%] Building CXX object CMakeFiles/gigasecond.dir/gigasecond.cpp.o
@@ -26,6 +24,34 @@ Scanning dependencies of target gigasecond
 [100%] Built target gigasecond
 
 Scanning dependencies of target test_gigasecond
+===============================================================================
+All tests passed (5 assertions in 5 test cases)
+
+[100%] Built target test_gigasecond
+
+
+
+===============================================================================
+Sun Oct 22 20:09:35 GTBDT 2023
+===============================================================================
+cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Boost: /mingw64/lib/cmake/Boost-1.83.0/BoostConfig.cmake (found suitable version "1.83.0", minimum required is "1.59") found components: date_time 
+-- Configuring done (2.6s)
+-- Generating done (0.2s)
+-- Build files have been written to: /~/exercism/cpp/gigasecond/build
+
+>make
+[ 33%] Building CXX object CMakeFiles/gigasecond.dir/gigasecond_test.cpp.o
+[ 66%] Building CXX object CMakeFiles/gigasecond.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable gigasecond.exe
+[100%] Built target gigasecond
 ===============================================================================
 All tests passed (5 assertions in 5 test cases)
 
