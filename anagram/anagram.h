@@ -4,17 +4,16 @@
 #include <vector>
 
 namespace anagram {
+    using std::string;
+    using std::vector;
 
 class anagram {
-
 public:
-    anagram(std::string const);
-    std::vector<std::string> matches(std::vector<std::string> const &);
-
+    anagram(string const);
+    vector<string> matches(vector<string> const &);
 private:
-    std::string subject;
-    std::string normal;
-
+    string subject;
+    string normal;
 };
 }  // namespace anagram
 
