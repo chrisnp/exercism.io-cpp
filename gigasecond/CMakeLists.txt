@@ -8,29 +8,29 @@ cmake_minimum_required(VERSION 3.5.1)
 project(${exercise} CXX)
 
 # Locate Boost date_time library -- linux
-set(CMAKE_INCLUDE_PATH ${CMAKE_INCLUDE_PATH} "/mnt/c/boost_1_68_0/include")
-set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "/mnt/c/boost_1_68_0/lib")
-set(BOOST_INCLUDE_DIR ${Boost_INCLUDE_DIR} "/mnt/c/boost_1_68_0/include")
-set(BOOST_LIBRARYDIR ${Boost_LIBRARYDIR} "/mnt/c/boost_1_68_0/lib")
+set(CMAKE_INCLUDE_PATH ${CMAKE_INCLUDE_PATH} "/c/msys64/mingw64/include")
+set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "/c/msys64/mingw64/lib")
+set(BOOST_INCLUDE_DIR ${Boost_INCLUDE_DIR} "/c/msys64/mingw64/include")
+set(BOOST_LIBRARYDIR ${Boost_LIBRARYDIR} "/c/msys64/mingw64/lib")
 # Locate Boost date_time library -- win
-# set(CMAKE_INCLUDE_PATH ${CMAKE_INCLUDE_PATH} "/boost_1_68_0/include")
-# set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "/boost_1_68_0/lib")
-# set(BOOST_INCLUDE_DIR ${Boost_INCLUDE_DIR} "/boost_1_68_0/include")
-# set(BOOST_LIBRARYDIR ${Boost_LIBRARYDIR} "/boost_1_68_0/lib")
+# set(CMAKE_INCLUDE_PATH ${CMAKE_INCLUDE_PATH} "/mingw64/include")
+# set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "/mingw64/lib")
+# set(BOOST_INCLUDE_DIR ${Boost_INCLUDE_DIR} "/mingw64/include")
+# set(BOOST_LIBRARYDIR ${Boost_LIBRARYDIR} "/mingw64/lib")
 
 # cmake_policy(SET CMP0074 NEW)
 
 set ( PROJECT_LINK_LIBS libboost_date_time.a )
-link_directories( /mnt/c/boost_1_68_0/lib )
-include_directories( /mnt/c/boost_1_68_0/include)
+# link_directories( /c/msys64/mingw64/lib )
+# include_directories( /c/msys64/mingw64/include)
 # for win64 uncomment (comment out above)
-# link_directories( /boost_1_68_0/lib )
-# include_directories( /boost_1_68_0/include)
+link_directories( /mingw64/lib )
+include_directories( /mingw64/include)
 
 set(Boost_USE_STATIC_LIBS ON)
 set(Boost_USE_MULTITHREADED ON)
 set(Boost_USE_STATIC_RUNTIME OFF)
-find_package(Boost 1.58 COMPONENTS date_time REQUIRED )
+find_package(Boost 1.59 COMPONENTS date_time REQUIRED )
 
 # IF (Boost_FOUND)
 #     INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIR})
@@ -57,7 +57,7 @@ else()
 endif()
 
 set_target_properties(${exercise} PROPERTIES
-    CXX_STANDARD 14
+    CXX_STANDARD 20
     CXX_STANDARD_REQUIRED OFF
     CXX_EXTENSIONS OFF
 )
