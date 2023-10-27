@@ -1,5 +1,3 @@
-// Enter your code below the lines of the families' information
-
 // Secret knowledge of the Zhang family:
 namespace zhang {
     int bank_number_part(int secret_modifier) {
@@ -42,8 +40,29 @@ namespace garcia {
     }
 }
 
-// Enter your code below
+// ## 1. Take your seat in front of the families and lay out your papers
+namespace estate_executor {
+// ## 2. Find the secret account number
+    int assemble_account_number(int secret_modifier) {
+        const int zhangs  {zhang::bank_number_part(secret_modifier)};
+        const int khans   {khan::bank_number_part(secret_modifier)};
+        const int garcias {garcia::bank_number_part(secret_modifier)};
+        return zhangs + khans + garcias;
+    }
+// ## 3. Last step: Enter the secret code
+    int assemble_code() {
+        int blues {0}, reds {0};
 
+        blues += zhang::blue::code_fragment();
+        reds  += zhang::red::code_fragment();
+        blues += khan::blue::code_fragment();
+        reds  += khan::red::code_fragment();
+        blues += garcia::blue::code_fragment();
+        reds  += garcia::red::code_fragment();
+
+        return blues * reds;
+    }
+} // namespace estate_executor
 
 
 
