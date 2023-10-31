@@ -1,0 +1,24 @@
+===============================================================================
+Tue Oct 31 02:22:57 GTBST 2023
+===============================================================================
+cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/log-levels/build
+
+>make
+[ 33%] Building CXX object CMakeFiles/log-levels.dir/log_levels_test.cpp.o
+[ 66%] Building CXX object CMakeFiles/log-levels.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable log-levels.exe
+[100%] Built target log-levels
+===============================================================================
+All tests passed (9 assertions in 9 test cases)
+
+[100%] Built target test_log-levels
