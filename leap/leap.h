@@ -10,6 +10,7 @@ namespace leap {
     constexpr auto divBy004(int &year) noexcept -> bool {
         return year % 4 == 0;
     }
-    bool is_leap_year(int year);
+    
+    auto is_leap_year(int) noexcept -> bool;
 
 }  // namespace leap
