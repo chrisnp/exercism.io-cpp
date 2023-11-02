@@ -1,12 +1,12 @@
 #include "pascals_triangle.h"
 
 namespace pascals_triangle {
-using namespace std;
 
-const ptriangle_t generate_rows(int n) {
+[[nodiscard]]
+ptriangle_t generate_rows(const int &n) noexcept {
     ptriangle_t ptriangle {};
     for (int i = 0; i < n; i++) {
-        vector<int> row {};
+        std::vector<int> row {};
         for (int j = 0; j <= i; j++) {
             row.push_back(binomial(i, j));
         }
@@ -14,6 +14,7 @@ const ptriangle_t generate_rows(int n) {
     }
     return ptriangle;
 }
+
 }  // namespace pascals_triangle 
 
 
