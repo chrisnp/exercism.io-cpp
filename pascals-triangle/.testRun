@@ -1,5 +1,4 @@
 >cmake -G 'MSYS Makefiles' ..
-
 -- The CXX compiler identification is GNU 9.2.0
 -- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe
 -- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe -- works
@@ -12,13 +11,11 @@
 -- Build files have been written to: ~/exercism/cpp/pascals-triangle/build
 
 >make
-
 Scanning dependencies of target pascals-triangle
 [ 25%] Building CXX object CMakeFiles/pascals-triangle.dir/pascals_triangle_test.cpp.obj
 [ 50%] Building CXX object CMakeFiles/pascals-triangle.dir/pascals_triangle.cpp.obj
 [ 75%] Building CXX object CMakeFiles/pascals-triangle.dir/test/tests-main.cpp.obj
 [100%] Linking CXX executable pascals-triangle.exe
-
 [100%] Built target pascals-triangle
 Scanning dependencies of target test_pascals-triangle
 ===============================================================================
@@ -36,6 +33,34 @@ All tests passed (8 assertions in 8 test cases)
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Configuring done (2.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/pascals-triangle/build
+
+>make
+[ 25%] Building CXX object CMakeFiles/pascals-triangle.dir/pascals_triangle_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/pascals-triangle.dir/pascals_triangle.cpp.o
+[ 75%] Building CXX object CMakeFiles/pascals-triangle.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable pascals-triangle.exe
+[100%] Built target pascals-triangle
+===============================================================================
+All tests passed (8 assertions in 8 test cases)
+
+[100%] Built target test_pascals-triangle
+
+
+
+===============================================================================
+Thu Nov  2 02:44:47 GTBST 2023
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.8s)
 -- Generating done (0.1s)
 -- Build files have been written to: /~/exercism/cpp/pascals-triangle/build
 
