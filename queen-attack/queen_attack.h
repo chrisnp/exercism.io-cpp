@@ -20,18 +20,17 @@ public:
     const square &white() const noexcept;
 
     constexpr auto legal_position(square const& legal) noexcept -> bool {
-        return 0 <= legal.first && 
-               7 >= legal.first &&
-               0 <= legal.second && 
-               7 >= legal.second;
+        return 0 <= legal.first && 7 >= legal.first &&
+               0 <= legal.second && 7 >= legal.second;
     }
 
-    bool can_attack() const noexcept;
+    auto can_attack() const noexcept -> bool;
     
 private:
     square white_queen, black_queen;
 };
 }  // namespace queen_attack
+
 
 #ifndef EXERCISM_RUN_ALL_TESTS
 #define EXERCISM_RUN_ALL_TESTS
