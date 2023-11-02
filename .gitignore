@@ -52,7 +52,6 @@ HINTS.md
 *_wboost.cpp
 *_wboost.h
 cleanup.sh
-# cleanup.ps1
-# prepareTests.ps1
 *.ps1
+
 .fake
