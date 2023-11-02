@@ -3,14 +3,15 @@
 
 namespace pascals_triangle {
 
-constexpr auto factorial (const int n) noexcept -> int { 
+constexpr auto factorial (const int &n) noexcept -> int { 
     return n == 0 ? 1 : n * factorial(n - 1);
 }
-constexpr auto binomial (int n, int k) noexcept -> int {
+constexpr auto binomial (const int &n, const int &k) noexcept -> int {
     return factorial(n) / (factorial(k) * factorial(n - k));
 }
 using ptriangle_t = std::vector<std::vector<int>>;
-const ptriangle_t generate_rows(int);
+const auto generate_rows(const int&) noexcept -> ptriangle_t ;
+
 } // namespace pascals_triangle 
 
 

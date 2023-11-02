@@ -41,5 +41,6 @@ bool queen_attack::chess_board::can_attack() const noexcept {
     int drank = abs(black_queen.first - white_queen.first);
     int dfile = abs(black_queen.second - white_queen.second); 
     
-    return drank * dfile == 0 || drank / dfile == 1;
+    return drank * dfile == 0 || 
+           drank / dfile == 1;
 }
