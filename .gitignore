@@ -45,6 +45,8 @@ cleanup.sh
 # Visual Studio Code workspace
 .ionide/
 makelnk.bat
+.lsp/
+.clj-kondo/
 
 Notes.md 
 HELP.md
