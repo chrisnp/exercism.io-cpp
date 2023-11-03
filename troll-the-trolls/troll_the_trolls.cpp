@@ -1,26 +1,40 @@
 namespace hellmath {
 
-// TODO: Task 1 - Define an `AccountStatus` enumeration to represent the four
-// account types: `troll`, `guest`, `user`, and `mod`.
-
-// TODO: Task 1 - Define an `Action` enumeration to represent the three
-// permission types: `read`, `write`, and `remove`.
-
-// TODO: Task 2 - Implement the `display_post` function, that gets two arguments
-// of `AccountStatus` and returns a `bool`. The first argument is the status of
-// the poster, the second one is the status of the viewer.
-
-// TODO: Task 3 - Implement the `permission_check` function, that takes an
-// `Action` as a first argument and an `AccountStatus` to check against. It
-// should return a `bool`.
-
-// TODO: Task 4 - Implement the `valid_player_combination` function that
-// checks if two players can join the same game. The function has two parameters
-// of type `AccountStatus` and returns a `bool`.
-
-// TODO: Task 5 - Implement the `has_priority` function that takes two
-// `AccountStatus` arguments and returns `true`, if and only if the first
-// account has a strictly higher priority than the second.
-
-
+// Task 1
+enum class AccountStatus : int { troll = 0, guest = 1, user = 2, mod = 3 };
+enum class Action : int { read = 1, write = 2, remove = 3 };
+using S = AccountStatus;
+using A = Action;
+// Task 2
+[[nodiscard]]
+auto display_post(const S &poster, const S &viewer) noexcept -> bool {
+    int p = static_cast<int>(poster), v = static_cast<int>(viewer);
+    return (p * v != 0 || p + v == 0);
+}
+// Task 3
+[[nodiscard]]
+auto permission_check(const A &action, const S &status) noexcept -> bool {
+    switch (action) {
+        case A::read   : return true;
+        case A::write  : return status != S::guest;
+        case A::remove : return status == S::mod;
+        default        : return false;
+    }
+}
+// Task 4
+[[nodiscard]]
+auto valid_player_combination(const S &player1, const S &player2) noexcept -> bool {
+    int s1 = static_cast<int>(player1), s2 = static_cast<int>(player2);
+    return s1 * s2 > 3 || s1 + s2 == 0 ; 
+}
+// Task 5
+[[nodiscard]]
+auto has_priority(const S &account1, const S &account2) noexcept -> bool {
+    return static_cast<int>(account1) > static_cast<int>(account2);
+}
 }  // namespace hellmath
+
+
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
+#endif
