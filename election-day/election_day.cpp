@@ -1,34 +1,45 @@
 #include <string>
 #include <vector>
 
-namespace election {
+template<class ForwardIt, class Compare>
+constexpr auto max_elem(ForwardIt first, ForwardIt last, Compare comp) -> ForwardIt {
+    if (first == last) return last;
+    ForwardIt largest = first;
+    ++first;
+    for (; first != last; ++first) if (comp(*largest, *first)) largest = first;
+    return largest;
+}
 
-// The election result struct is already created for you:
+namespace election {
 
 struct ElectionResult {
     // Name of the candidate
-    std::string name{};
+    std::string name {};
     // Number of votes the candidate has
-    int votes{};
+    int votes {0};
 };
-
-// TODO: Task 1
-// vote_count takes a reference to an `ElectionResult` as an argument and will
-// return the number of votes in the `ElectionResult.
-
-
-// TODO: Task 2
-// increment_vote_count takes a reference to an `ElectionResult` as an argument
-// and a number of votes (int), and will increment the `ElectionResult` by that
-// number of votes.
-
-
-// TODO: Task 3
-// determine_result receives the reference to a final_count and returns a
-// reference to the `ElectionResult` of the new president. It also changes the
-// name of the winner by prefixing it with "President". The final count is given
-// in the form of a `reference` to `std::vector<ElectionResult>`, a vector with
-// `ElectionResults` of all the participating candidates.
-
+// Task 1
+auto vote_count(ElectionResult& candidate) noexcept -> int {
+    return candidate.votes;
+}
+// Task 2
+void increment_vote_count(ElectionResult& candidate, const int &votes) {
+    candidate.votes += votes;
+}
+// Task 3
+auto determine_result(std::vector<ElectionResult> &final_count) -> ElectionResult& {
+    const auto& ballot_outcome = max_elem(begin(final_count), end(final_count), 
+                                          [](auto& cand1, auto& cand2) { 
+                                            return cand1.votes < cand2.votes; 
+                                          });
+    ballot_outcome->name.insert(0, "President ");
+    return *ballot_outcome;
+}
 
 }  // namespace election
+
+
+
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
+#endif
