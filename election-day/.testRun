@@ -1,0 +1,24 @@
+===============================================================================
+Thu Nov  2 02:26:26 GTBST 2023
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/election-day/build
+
+>make
+[ 33%] Building CXX object CMakeFiles/election-day.dir/election_day_test.cpp.o
+[ 66%] Building CXX object CMakeFiles/election-day.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable election-day.exe
+[100%] Built target election-day
+===============================================================================
+All tests passed (15 assertions in 9 test cases)
+
+[100%] Built target test_election-day
