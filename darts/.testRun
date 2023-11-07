@@ -1,0 +1,25 @@
+===============================================================================
+Tue Nov  7 23:56:04 GTBST 2023
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/darts/build
+
+>make
+[ 25%] Building CXX object CMakeFiles/darts.dir/darts_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/darts.dir/darts.cpp.o
+[ 75%] Building CXX object CMakeFiles/darts.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable darts.exe
+[100%] Built target darts
+===============================================================================
+All tests passed (13 assertions in 13 test cases)
+
+[100%] Built target test_darts
