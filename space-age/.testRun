@@ -1,5 +1,4 @@
 > cmake -G "MSYS Makefiles" .
-
 -- The CXX compiler identification is GNU 9.1.0
 -- Check for working CXX compiler: /msys64/usr/bin/c++.exe
 -- Check for working CXX compiler: /msys64/usr/bin/c++.exe -- works
@@ -12,14 +11,12 @@
 -- Build files have been written to: ~/exercism/cpp/space-age/build
 
 > make 
-
 Scanning dependencies of target space-age
 
 [ 25%] Building CXX object CMakeFiles/space-age.dir/space_age_test.cpp.obj
 [ 50%] Building CXX object CMakeFiles/space-age.dir/space_age.cpp.obj
 [ 75%] Building CXX object CMakeFiles/space-age.dir/test/tests-main.cpp.obj
 [100%] Linking CXX executable space-age.exe
-
 [100%] Built target space-age
 
 Scanning dependencies of target test_space-age
@@ -31,7 +28,6 @@ All tests passed (16 assertions in 9 test cases)
 
 
 >cmake -G 'MSYS Makefiles' ..
-
 -- The CXX compiler identification is GNU 9.2.0
 -- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe
 -- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe -- works
@@ -44,17 +40,43 @@ All tests passed (16 assertions in 9 test cases)
 -- Build files have been written to: ~/exercism/cpp/space-age/build
 
 >make
-
 Scanning dependencies of target space-age
 
 [ 25%] Building CXX object CMakeFiles/space-age.dir/space_age_test.cpp.obj
 [ 50%] Building CXX object CMakeFiles/space-age.dir/space_age.cpp.obj
 [ 75%] Building CXX object CMakeFiles/space-age.dir/test/tests-main.cpp.obj
 [100%] Linking CXX executable space-age.exe
-
 [100%] Built target space-age
 
 Scanning dependencies of target test_space-age
+===============================================================================
+All tests passed (16 assertions in 9 test cases)
+
+[100%] Built target test_space-age
+
+
+
+===============================================================================
+Thu Nov  2 16:17:14 GTBST 2023
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/space-age/build
+
+>make
+[ 25%] Building CXX object CMakeFiles/space-age.dir/space_age_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/space-age.dir/space_age.cpp.o
+[ 75%] Building CXX object CMakeFiles/space-age.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable space-age.exe
+[100%] Built target space-age
 ===============================================================================
 All tests passed (16 assertions in 9 test cases)
 
