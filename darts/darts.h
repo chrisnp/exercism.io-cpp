@@ -1,8 +1,12 @@
-#if !defined(DARTS_H)
-#define DARTS_H
+#pragma once
 
 namespace darts {
 
+auto score(const double&, const double&) noexcept -> unsigned int;
+
 } // namespace darts
 
-#endif //DARTS_H
+
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
+#endif
