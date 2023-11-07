@@ -3,9 +3,11 @@
 
 namespace pascals_triangle {
 
+[[nodiscard]]
 constexpr auto factorial (const int &n) noexcept -> int { 
     return n == 0 ? 1 : n * factorial(n - 1);
 }
+[[nodiscard]]
 constexpr auto binomial (const int &n, const int &k) noexcept -> int {
     return factorial(n) / (factorial(k) * factorial(n - k));
 }
