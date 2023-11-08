@@ -1,27 +1,24 @@
 #include "high_scores.h"
+    
+std::vector<int> arcade::HighScores::list_scores() {
+    return arcade::HighScores::scores;
+}
 
-#include <algorithm>
+int arcade::HighScores::latest_score() {
+    auto scores = arcade::HighScores::scores;
+    return scores.empty() ? 0 : scores.back();
+}
 
-namespace arcade {
+int arcade::HighScores::personal_best() {
+    auto scores = arcade::HighScores::scores;
+    return scores.empty() ? 0 
+           : *max_elem(begin(scores), end(scores));
+}
 
-    std::vector<int> HighScores::list_scores() {
-        // TODO: Return all scores for this session.
-        return {0, 1, 2};
-    }
+std::vector<int> arcade::HighScores::top_three() {
+    auto top = arcade::HighScores::scores;
+    sort(begin(top), end(top), greater<int>());
+    top.resize(min(3lu, top.size()));
+    return top;
+}
 
-    int HighScores::latest_score() {
-        // TODO: Return the latest score for this session.
-        return 0;
-    }
-
-    int HighScores::personal_best() {
-        // TODO: Return the highest score for this session.
-        return 0;
-    }
-
-    std::vector<int> HighScores::top_three() {
-        // TODO: Return the top 3 scores for this session in descending order.
-        return {0, 1, 2};
-    }
-
-}  // namespace arcade
