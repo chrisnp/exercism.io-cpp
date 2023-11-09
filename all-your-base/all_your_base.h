@@ -4,8 +4,9 @@
 
 namespace all_your_base {
 
-using namespace std;
-vector<unsigned int> convert(unsigned int, const vector<unsigned int>&, unsigned int);
+using uint = unsigned int;
+typedef std::vector<uint> digits_t;
+auto convert(uint, const digits_t&, uint) -> digits_t;
 
 }  // namespace all_your_base
 

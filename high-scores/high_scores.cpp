@@ -12,7 +12,7 @@ int arcade::HighScores::latest_score() {
 int arcade::HighScores::personal_best() {
     auto scores = arcade::HighScores::scores;
     return scores.empty() ? 0 
-           : *max_elem(begin(scores), end(scores));
+                          : *max_elem(begin(scores), end(scores));
 }
 
 std::vector<int> arcade::HighScores::top_three() {

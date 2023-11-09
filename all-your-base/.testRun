@@ -4,9 +4,35 @@
 -- Generating done
 -- Build files have been written to: ~/exercism/cpp/all-your-base/build
 
+>make
+[100%] Built target all-your-base
+===============================================================================
+All tests passed (17 assertions in 17 test cases)
+
+[100%] Built target test_all-your-base
+
+
+
+===============================================================================
+Thu Nov  9 02:49:06 GTBST 2023
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/all-your-base/build
 
 >make
-
+[ 25%] Building CXX object CMakeFiles/all-your-base.dir/all_your_base_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/all-your-base.dir/all_your_base.cpp.o
+[ 75%] Building CXX object CMakeFiles/all-your-base.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable all-your-base.exe
 [100%] Built target all-your-base
 ===============================================================================
 All tests passed (17 assertions in 17 test cases)

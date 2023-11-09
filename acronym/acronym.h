@@ -5,6 +5,6 @@
 
 namespace acronym {
 
-const std::string acronym(const std::string&);
+auto acronym(const std::string&) noexcept -> std::string;
 
 }  // namespace acronym

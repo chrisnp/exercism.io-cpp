@@ -26,38 +26,33 @@ class HighScores {
 namespace {
 
 template <class T> 
-struct greater {
-    bool operator() (const T& x, const T& y) const { 
-        return x > y; 
-    }
-};
-template<typename T> 
-static void swap(T &x, T &y) {
-    T tmp {x};
-    x = y;
-    y = tmp;
+struct greater {bool operator()(const T& x, const T& y) const {return x > y;}};
+
+template<typename T> static void swap(T &x, T &y) {
+    T temp {x}; x = y; y = temp;
 }
-template< class RandomAccessIterator, class Compare>
-static void sort( RandomAccessIterator first, 
-                  RandomAccessIterator last, Compare comp ) {
-	for (auto i = first; i != last; i++) {
-		for (auto j = i + 1; j != last; j++) {
-			if (comp(*j, *i)) swap(*i, *j);
-		}
-	}
+
+template<class RandomAccessIterator, class Compare>
+static void sort(RandomAccessIterator first, 
+                 RandomAccessIterator last, Compare comp)
+{
+	for (auto i = first; i != last; i++)
+		for (auto j = i + 1; j != last; j++) 
+            if (comp(*j, *i)) swap(*i, *j); 
 }
+
 template<class ForwardIt>
-constexpr auto max_elem(ForwardIt first, ForwardIt last) -> ForwardIt {
+constexpr auto max_elem(ForwardIt first, ForwardIt last) noexcept -> ForwardIt 
+{
     if (first == last) return last;
     ForwardIt largest = first;
-    ++first;
-    for (; first != last; ++first) if (*largest < *first) largest = first;
+    for (first++; first != last; ++first) 
+        if (*largest < *first) largest = first;
     return largest;
 }
+
 template<typename T> 
-constexpr auto min(T x, T y) noexcept -> T { 
-    return x < y ? x : y; 
-}
+constexpr auto min(T x, T y) noexcept -> T { return x < y ? x : y; }
 
 } // namespace
 

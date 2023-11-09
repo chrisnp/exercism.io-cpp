@@ -3,8 +3,10 @@
 
 namespace atbash_cipher {
 
-std::string encode(const std::string&);
-std::string decode(const std::string&);
+using string = std::string;
+
+auto encode(const string&) noexcept -> string;
+auto decode(const string&) -> string;
 
 constexpr auto alpha (const char &c) noexcept -> bool {
     return  'a' <= c && c <= 'z';
