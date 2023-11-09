@@ -1,7 +1,7 @@
 #include "atbash_cipher.h"
 #include "test/catch.hpp"
 
-std::string atbash_cipher::encode(const std::string &plain) {
+std::string atbash_cipher::encode(const std::string &plain) noexcept {
     std::string ciphertext {};
     int index {0};
     for( auto &ch: plain) {
