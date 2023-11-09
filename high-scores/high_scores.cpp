@@ -17,7 +17,7 @@ int arcade::HighScores::personal_best() {
 
 std::vector<int> arcade::HighScores::top_three() {
     auto top = arcade::HighScores::scores;
-    sort_by(begin(top), end(top), higher<int>());
+    sort(begin(top), end(top), greater<int>());
     top.resize(min(3lu, top.size()));
     return top;
 }
