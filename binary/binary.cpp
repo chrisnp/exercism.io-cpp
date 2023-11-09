@@ -1,17 +1,15 @@
 #include "binary.h"
 #include <cmath>
 
-using namespace std;
+using string = std::string;
 
-long binary::convert (string binstr) {
-    for (auto& d: binstr) {
-        if (!isdigit(d)) return 0;
-    }
+long binary::convert (string binstr) noexcept {
+    for (auto& d: binstr) if (!isdigit(d)) return 0;
     auto binary {stoll(binstr)}; 
-    long decimal {0}, pos {0};
+    long decimal { 0 }, position { 0 };
     while (binary != 0) {
-        decimal += (binary % 10) * pow(2, pos);
-        pos++;
+        decimal += (binary % 10) * pow(2, position);
+        position++;
         binary /= 10;
     }
     return decimal;
