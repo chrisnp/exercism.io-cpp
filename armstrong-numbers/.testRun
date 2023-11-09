@@ -34,3 +34,31 @@ Scanning dependencies of target armstrong-numbers
 All tests passed (9 assertions in 9 test cases)
 
 [100%] Built target test_armstrong-numbers
+
+
+
+===============================================================================
+Thu Nov  9 03:06:50 GTBST 2023
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/armstrong-numbers/build
+
+>make
+[ 25%] Building CXX object CMakeFiles/armstrong-numbers.dir/armstrong_numbers_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/armstrong-numbers.dir/armstrong_numbers.cpp.o
+[ 75%] Building CXX object CMakeFiles/armstrong-numbers.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable armstrong-numbers.exe
+[100%] Built target armstrong-numbers
+===============================================================================
+All tests passed (9 assertions in 9 test cases)
+
+[100%] Built target test_armstrong-numbers
