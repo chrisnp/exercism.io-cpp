@@ -27,3 +27,31 @@ Scanning dependencies of target test_atbash-cipher
 All tests passed (15 assertions in 15 test cases)
 
 [100%] Built target test_atbash-cipher
+
+
+
+===============================================================================
+Thu Nov  9 03:13:38 GTBST 2023
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/atbash-cipher/build
+
+>make
+[ 25%] Building CXX object CMakeFiles/atbash-cipher.dir/atbash_cipher_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/atbash-cipher.dir/atbash_cipher.cpp.o
+[ 75%] Building CXX object CMakeFiles/atbash-cipher.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable atbash-cipher.exe
+[100%] Built target atbash-cipher
+===============================================================================
+All tests passed (15 assertions in 15 test cases)
+
+[100%] Built target test_atbash-cipher
