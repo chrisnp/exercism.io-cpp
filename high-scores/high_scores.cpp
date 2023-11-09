@@ -12,12 +12,12 @@ int arcade::HighScores::latest_score() {
 int arcade::HighScores::personal_best() {
     auto scores = arcade::HighScores::scores;
     return scores.empty() ? 0 
-           : *max_elem(begin(scores), end(scores));
+                          : *max_elem(begin(scores), end(scores));
 }
 
 std::vector<int> arcade::HighScores::top_three() {
     auto top = arcade::HighScores::scores;
-    sort(begin(top), end(top), greater<int>());
+    sort_by(begin(top), end(top), higher<int>());
     top.resize(min(3lu, top.size()));
     return top;
 }
