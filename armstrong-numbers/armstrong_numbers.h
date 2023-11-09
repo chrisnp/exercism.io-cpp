@@ -2,6 +2,6 @@
 
 namespace armstrong_numbers {
 
-    bool is_armstrong_number(const int&);
+    auto is_armstrong_number(const int&) noexcept -> bool;
 
 }  // namespace armstrong_numbers
