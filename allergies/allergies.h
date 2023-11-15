@@ -1,19 +1,23 @@
 #pragma once
-
 #include <vector>
+#include <string>
 #include <unordered_set>
 
 namespace allergies {
 
-class allergy_test {
+using ushort = unsigned short;
+typedef std::unordered_set<std::string> allergies_t;
+typedef std::vector<std::string> allergens_t;
 
+class allergy_test {
 public:
-    explicit allergy_test(unsigned short);
-    bool is_allergic_to(const std::string &);
-    std::unordered_set<std::string> get_allergies() const;
+    explicit allergy_test(ushort);
+    auto is_allergic_to(const std::string&) noexcept -> bool;
+    auto get_allergies() const -> allergies_t;
 private:
-    std::unordered_set<std::string> allergies;
-    std::vector<std::string> ALLERGENS = {
+    ushort score;
+    allergies_t allergies;
+    allergens_t ALLERGENS = {
         "eggs", "peanuts", "shellfish", "strawberries",
         "tomatoes", "chocolate", "pollen", "cats"
     };
