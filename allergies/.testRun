@@ -39,7 +39,7 @@ Wed Nov 15 03:20:31 GTBST 2023
 -- Detecting CXX compile features - done
 -- Configuring done (2.5s)
 -- Generating done (0.1s)
--- Build files have been written to: /c/Users/Chris/exercism/cpp/allergies/build
+-- Build files have been written to: /~/exercism/cpp/allergies/build
 
 >make
 [ 25%] Building CXX object CMakeFiles/allergies.dir/allergies_test.cpp.o
