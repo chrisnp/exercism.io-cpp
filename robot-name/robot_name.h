@@ -1,16 +1,20 @@
 #pragma once
 #include <string>
+#include <random>
+#include <set>
 
 namespace robot_name {
 
 class robot {
 
 public:
-    explicit robot();
-    auto reset() -> void;
+    [[nodiscard]] explicit robot();
+    auto reset() noexcept -> void;
+    [[nodiscard]] 
     auto name() const noexcept -> std::string const&;
 private:
-    std::string _name;
+    std::string robot_name {};
+    std::set<std::string> names_history {};
 };
 
 }  // namespace robot_name

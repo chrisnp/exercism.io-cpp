@@ -1,12 +1,13 @@
 #pragma once
 
 #include <string>
+#include <cstdint>
 
 using namespace std;
 
 namespace hexadecimal {
 
-    uint64_t convert(const string&);
+auto convert(const string&) noexcept -> uint64_t;
 
 }
 

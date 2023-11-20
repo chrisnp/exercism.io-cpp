@@ -1,6 +1,6 @@
 #include "hexadecimal.h"
 
-uint64_t hexadecimal::convert(const string &hex_string) {
+uint64_t hexadecimal::convert(const string &hex_string) noexcept {
     
     int hex {0};
 
