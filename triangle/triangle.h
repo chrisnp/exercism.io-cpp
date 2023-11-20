@@ -16,13 +16,13 @@ auto kind(double, double, double) -> flavor;
 
 namespace doubles {
 
-[[nodiscard, gnu::pure]] 
+[[nodiscard, gnu::const]] 
 auto maximum(std::vector<double>&) noexcept -> double;
 
-[[nodiscard, gnu::pure]]    
+[[nodiscard, gnu::const]]    
 auto minimum(std::vector<double>&) noexcept -> double;
 
-[[nodiscard, gnu::pure]]    
+[[nodiscard, gnu::const]]    
 auto kahanSum(std::vector<double>&) noexcept -> double; 
 
 } // namespace doubles
