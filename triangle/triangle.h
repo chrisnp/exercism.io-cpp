@@ -4,23 +4,26 @@
 
 namespace triangle {
     
-    enum class flavor {
-        equilateral, 
-        isosceles,
-        scalene
-    };
+enum class flavor {
+    equilateral, 
+    isosceles,
+    scalene
+};
 
-    flavor kind(double, double, double);
+auto kind(double, double, double) -> flavor;
 
 }  // namespace triangle
 
 namespace doubles {
 
-    double maximum(std::vector<double>&);
-    
-    double minimum(std::vector<double>&);
-    
-    double kahanSum(std::vector<double>&); 
+[[nodiscard, gnu::pure]] 
+auto maximum(std::vector<double>&) noexcept -> double;
+
+[[nodiscard, gnu::pure]]    
+auto minimum(std::vector<double>&) noexcept -> double;
+
+[[nodiscard, gnu::pure]]    
+auto kahanSum(std::vector<double>&) noexcept -> double; 
 
 } // namespace doubles
 
