@@ -1,11 +1,11 @@
 #include "queen_attack.h"
 #include <sstream>
 
-queen_attack::chess_board::chess_board(const square &white, const square &black) : 
-                                       white_queen { white }, black_queen { black } 
+queen_attack::chess_board::chess_board(const square &white, const square &black) 
+                           : white_queen { white }, black_queen { black } 
 {
     if (black_queen == white_queen) {
-        throw std::domain_error("Both queens on same square");
+        throw std::domain_error("Daahling, this is MY square");
     }
     if (!legal_position(black_queen)) {
         throw std::domain_error("Black queen not on board");

@@ -14,16 +14,18 @@ public:
                 const square &black = {7, 3}
              );
 
+    [[nodiscard]]
     explicit operator std::string() const;
 
-    const square &black() const noexcept;
-    const square &white() const noexcept;
+    [[nodiscard]] const square &black() const noexcept;
+    [[nodiscard]] const square &white() const noexcept;
 
     constexpr auto legal_position(square const& legal) noexcept -> bool {
         return 0 <= legal.first && 7 >= legal.first &&
                0 <= legal.second && 7 >= legal.second;
     }
 
+    [[nodiscard]]
     auto can_attack() const noexcept -> bool;
     
 private:
