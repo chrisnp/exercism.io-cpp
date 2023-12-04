@@ -9,8 +9,9 @@ namespace anagram {
 
 class anagram {
 public:
-    anagram(string const);
-    vector<string> matches(vector<string> const &);
+    [[nodiscard]]
+    explicit anagram(string const);
+    auto matches(vector<string> const &) noexcept -> vector<string>;
 private:
     string subject;
     string normal;

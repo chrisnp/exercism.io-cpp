@@ -5,7 +5,7 @@
 bool armstrong_numbers::is_armstrong_number(const int &num) noexcept {
     const std::string digits { std::to_string(num) };
 
-    int num_digits { (int) digits.length() }, 
+    int num_digits { static_cast<int>(digits.length()) }, 
         sum_digits_raised { 0 };
 
     for (auto digit : digits) {
