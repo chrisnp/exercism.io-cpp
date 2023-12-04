@@ -11,8 +11,10 @@ typedef std::vector<std::string> allergens_t;
 
 class allergy_test {
 public:
+    [[nodiscard]]
     explicit allergy_test(ushort);
     auto is_allergic_to(const std::string&) noexcept -> bool;
+    [[nodiscard]]
     auto get_allergies() const -> allergies_t;
 private:
     ushort score;
