@@ -4,9 +4,10 @@
 
 namespace beer_song {
 
-std::string verse(int);
-std::string sing(int, int);
-std::string sing(int);
+[[nodiscard, gnu::const]]
+auto verse(int) noexcept -> std::string;
+auto sing(int, int) noexcept -> std::string;
+auto sing(int) noexcept -> std::string;
 
 }  // namespace beer_song
 
