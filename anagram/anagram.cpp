@@ -12,11 +12,11 @@ anagram::anagram::anagram(const string word) {
     std::sort (this->normal.begin(), this->normal.end());
 }
 
-vector<string> anagram::anagram::matches(vector<string> const &candidates) {
+vector<string> anagram::anagram::matches(vector<string> const &candidates) noexcept 
+{
     vector<string> matching {};
     for (vector<string>::const_iterator candidate = candidates.begin();
-         candidate != candidates.end(); 
-         candidate ++) 
+         candidate != candidates.end(); candidate ++) 
     {
         string word = *candidate;
         transform (word.begin(), word.end(), word.begin(), ::tolower);
