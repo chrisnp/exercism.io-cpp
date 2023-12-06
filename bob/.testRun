@@ -1,35 +1,3 @@
->cmake -G "Unix Makefiles" ..
-
--- The CXX compiler identification is GNU 9.2.0
--- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe
--- Check for working CXX compiler: /msys64/mingw64/bin/g++.exe -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done
--- Generating done
--- Build files have been written to: ~/exercism/cpp/bob/build
-
-
->make
-
-Scanning dependencies of target bob
-
-[ 25%] Building CXX object CMakeFiles/bob.dir/bob_test.cpp.obj
-[ 50%] Building CXX object CMakeFiles/bob.dir/bob.cpp.obj
-[ 75%] Building CXX object CMakeFiles/bob.dir/test/tests-main.cpp.obj
-[100%] Linking CXX executable bob.exe
-[100%] Built target bob
-
-Scanning dependencies of target test_bob
-===============================================================================
-All tests passed (25 assertions in 25 test cases)
-
-[100%] Built target test_bob
-
-
-
 >cmake -G "MSYS Makefiles" ..
 
 -- The CXX compiler identification is GNU 9.2.0
@@ -55,6 +23,34 @@ Scanning dependencies of target bob
 [100%] Built target bob
 
 Scanning dependencies of target test_bob
+===============================================================================
+All tests passed (25 assertions in 25 test cases)
+
+[100%] Built target test_bob
+
+
+
+===============================================================================
+Wed Dec  6 22:04:36 GTBST 2023
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/bob/build
+
+>make
+[ 25%] Building CXX object CMakeFiles/bob.dir/bob_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/bob.dir/bob.cpp.o
+[ 75%] Building CXX object CMakeFiles/bob.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable bob.exe
+[100%] Built target bob
 ===============================================================================
 All tests passed (25 assertions in 25 test cases)
 

@@ -8,10 +8,10 @@ using string = std::string;
 auto encode(const string&) noexcept -> string;
 auto decode(const string&) -> string;
 
-constexpr auto alpha (const char &c) noexcept -> bool {
+constexpr auto alpha(const char &c) noexcept -> bool {
     return  'a' <= c && c <= 'z';
 }
-constexpr auto digit (const char &c) noexcept -> bool {
+constexpr auto digit(const char &c) noexcept -> bool {
     return  '0' <= c && c <= '9';
 }
 
