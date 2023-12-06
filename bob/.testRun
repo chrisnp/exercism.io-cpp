@@ -43,7 +43,7 @@ Wed Dec  6 22:04:36 GTBST 2023
 -- Detecting CXX compile features - done
 -- Configuring done (2.4s)
 -- Generating done (0.1s)
--- Build files have been written to: /c/Users/Chris/exercism/cpp/bob/build
+-- Build files have been written to: /~/exercism/cpp/bob/build
 
 >make
 [ 25%] Building CXX object CMakeFiles/bob.dir/bob_test.cpp.o
