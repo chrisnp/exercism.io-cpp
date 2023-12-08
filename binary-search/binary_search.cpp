@@ -3,20 +3,17 @@
 #include <algorithm>
 #include <stdexcept>
 
-using namespace std;
+using std::vector;
 
-int binary_search::find( vector<int> haystaq, int needle ) {
+int binary_search::find( const vector<int>& haystaq, const int& needle ) {
     assert( is_sorted( haystaq.cbegin(), haystaq.cend() ) );
 
-    int lo {0}, hi = haystaq.size() - 1;
+    long lo { 0L }, hi { static_cast<long>(haystaq.size() - 1) };
     while( lo <= hi ) {
         int mid = (lo + hi) >> 1;
-        if( haystaq.at(mid) == needle )
-            return mid;
-        else if( haystaq.at(mid) < needle )
-            lo = mid + 1;
-        else 
-            hi = mid - 1;
+        if( haystaq.at(mid) == needle ) return mid;
+        if( haystaq.at(mid) < needle ) lo = mid + 1;
+        if( haystaq.at(mid) > needle ) hi = mid - 1;
     }
-    throw domain_error("not found");
+    throw std::domain_error("not found");
 }
