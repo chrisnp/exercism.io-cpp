@@ -1,9 +1,7 @@
 #pragma once
 
-#include <stdexcept>
-
 namespace collatz_conjecture {
 
-unsigned int steps(const int&);
+[[gnu::pure]] auto steps(const int&) -> unsigned int;
 
-}
+} // namespace collatz_conjecture
