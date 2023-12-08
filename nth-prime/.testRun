@@ -59,3 +59,31 @@ Scanning dependencies of target test_nth-prime
 All tests passed (5 assertions in 5 test cases)
 
 [100%] Built target test_nth-prime
+
+
+
+===============================================================================
+Fri Dec  8 05:15:12 GTBST 2023
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/nth-prime/build
+
+>make
+[ 25%] Building CXX object CMakeFiles/nth-prime.dir/nth_prime_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/nth-prime.dir/nth_prime.cpp.o
+[ 75%] Building CXX object CMakeFiles/nth-prime.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable nth-prime.exe
+[100%] Built target nth-prime
+===============================================================================
+All tests passed (5 assertions in 5 test cases)
+
+[100%] Built target test_nth-prime
