@@ -4,7 +4,7 @@
 
 namespace binary_search {
 
-int find( std::vector<int>, int );
+auto find( const std::vector<int>&, const int& ) -> int;
 
 }  // namespace binary_search
 
