@@ -1,11 +1,11 @@
 #pragma once
 
-#include <stdexcept>
 #include <vector>
 
 namespace nth_prime {
 
-unsigned long nth(unsigned long);
+auto nth(const unsigned long &) -> unsigned long;
+[[gnu::const]] auto is_prime(const int &) noexcept -> bool;
 
 }  // namespace nth_prime
 

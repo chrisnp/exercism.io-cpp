@@ -4,7 +4,8 @@
 
 namespace binary{
 
-auto convert(std::string) noexcept -> long;
+[[gnu::pure]]
+auto convert(const std::string&) noexcept -> long;
 
 }
 

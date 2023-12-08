@@ -28,3 +28,31 @@ Scanning dependencies of target test_binary-search
 All tests passed (11 assertions in 11 test cases)
 
 [100%] Built target test_binary-search
+
+
+
+===============================================================================
+Wed Dec  6 22:05:52 GTBST 2023
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/binary-search/build
+
+>make
+[ 25%] Building CXX object CMakeFiles/binary-search.dir/binary_search_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/binary-search.dir/binary_search.cpp.o
+[ 75%] Building CXX object CMakeFiles/binary-search.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable binary-search.exe
+[100%] Built target binary-search
+===============================================================================
+All tests passed (11 assertions in 11 test cases)
+
+[100%] Built target test_binary-search
