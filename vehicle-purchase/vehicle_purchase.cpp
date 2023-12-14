@@ -1,7 +1,6 @@
 #include "vehicle_purchase.h"
 
 namespace vehicle_purchase {
-    // using string = std::string;
     // needs_license determines whether a license is needed to drive a type of vehicle. 
     // Only "car" and "truck" require a license.
     bool needs_license(const string &kind) noexcept {
