@@ -14,8 +14,12 @@ std::uniform_int_distribution<int>  digits  ('0', '9');
 [[nodiscard]] 
 auto generate_name() noexcept -> std::string {
     std::string name {}; 
-    std::generate_n(std::back_inserter(name), 2, [&]() {return letters(mt);});
-    std::generate_n(std::back_inserter(name), 3, [&]() {return digits(mt);});
+    std::generate_n(
+        std::back_inserter( name ), 2, [&, name]() { return letters( mt ); }
+    );
+    std::generate_n(
+        std::back_inserter( name ), 3, [&, name]() { return digits( mt ); }
+    );
     return name;
 }
 } // namespace
