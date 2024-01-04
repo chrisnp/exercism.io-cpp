@@ -31,7 +31,7 @@ Fri Dec  8 13:34:58 GTBST 2023
 -- Detecting CXX compile features - done
 -- Configuring done (2.8s)
 -- Generating done (0.1s)
--- Build files have been written to: /c/Users/Chris/exercism/cpp/collatz-conjecture/build
+-- Build files have been written to: /~/exercism/cpp/collatz-conjecture/build
 
 >make
 [ 25%] Building CXX object CMakeFiles/collatz-conjecture.dir/collatz_conjecture_test.cpp.o
