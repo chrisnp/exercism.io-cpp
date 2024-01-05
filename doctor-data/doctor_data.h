@@ -21,16 +21,17 @@ using string = std::string;
 
 struct Vessel {
     Vessel(string name, int generation, 
-           star_map::System current_system = star_map::System::Sol) {};
+           star_map::System current_system = star_map::System::Sol);
     auto replicate(string new_name) const -> Vessel;
     auto make_booster() -> void;
     auto shoot_booster() -> bool;
     string name {};
-    int genaration {};
+    int generation {};
     star_map::System current_system {};
     int boosters { 0 };
 }
 
-auto get_older_bob(Vessel)
+auto get_older_bob(Vessel const&, Vessel const&) noexcept -> string;
+auto in_the_same_system(Vessel const&, Vessel const&) noexcept -> bool;
 
 } // namespace heaven
