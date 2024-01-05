@@ -1,1 +1,30 @@
-hp1,üapöhp2ö%Äcountöiöma1,öhp2ö%Älawöhp3öö/önextöstepö%Ädacöiöml1ö%Älawö7ö%Ädacöiömb1ö%Ärandomöö%Äscrö9sö%Äsirö9sö%Äxctöhr1ö%Äaddöiömx1ö%Ädacöiömx1ö%Äswapö%Äaddöiömy1ö%Ädacöiömy1ö%Ärandomö%Äscrö9sö%Äsirö9sö%Äxctöhr2ö%Ädacöiömdyö%Ädioöiömdxö%Äsetupö.hpt,3ö%Älacöranö%Ädacöiömth
+#pragma once
+
+#include <string>
+
+namespace star_map {
+
+enum class System {
+    BetaHydri,
+    Sol,
+    EpsilonEridani,
+    AlphaCentauri,
+    DeltaEridani,
+    Omicron2Eridani
+};
+
+} // namespace star_map
+
+namespace heaven {
+
+using string = std::string;
+
+struct Vessel {
+    Vessel(string name, int generation, 
+           star_map::System current_system = star_map::System::Sol);
+    auto replicate(string name) const -> Vessel;
+    auto make_booster() -> void;
+    auto shoot_booster() -> bool;
+}
+
+} // namespace heaven
