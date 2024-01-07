@@ -1,34 +1,34 @@
 #include "doctor_data.h"
-using string = std::string;
 
-heaven::Vessel::Vessel(
+heaven::Vessel::Vessel( 
     string name, int generation, star_map::System current_system
-    ) : name(name), generation(generation), current_system(current_system)
-{}
+) : name(name), generation(generation), 
+    current_system(current_system), busters(0) {}
 
-heaven::Vessel heaven::Vessel::replicate(string new_name) const {
-    Vessel replica { new_name, generation + 1, current_system };
+heaven::Vessel heaven::Vessel::replicate(string new_name) const 
+{
+    Vessel replica { new_name, generation + 1 };
     return replica;
 }
 
-void heaven::Vessel::make_booster() {
+void heaven::Vessel::make_buster() 
+{
     ++busters;
 }
 
-bool heaven::Vessel::shoot_booster() {
-    if (busters) {
-        --busters;
-        return true;
-    }
-    return false;
+bool heaven::Vessel::shoot_buster() 
+{
+    return !(--busters < 0);
 }
 
-string heaven::get_older_bob(Vessel const &v1, Vessel const &v2) 
+std::string heaven::get_older_bob(heaven::Vessel const &bob_v1, 
+                                  heaven::Vessel const &bob_v2) noexcept
 {
-    return (v1.generation > v2.generation ? v2 : v1).name;
+    return (bob_v2.generation > bob_v1.generation ? bob_v1 : bob_v2).name;
 }
 
-bool heaven::in_the_same_system(Vessel const &v1, Vessel const &v2)
+bool heaven::in_the_same_system(heaven::Vessel const &v1, 
+                                heaven::Vessel const &v2) noexcept
 {
-    return v1.current_system == v2.current_system
+    return v1.current_system == v2.current_system;
 }
