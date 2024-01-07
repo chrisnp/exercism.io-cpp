@@ -8,7 +8,7 @@ anagram::anagram::anagram(const string word) {
     this->subject = word;
     transform (this->subject.begin(), this->subject.end(),
                this->subject.begin(), ::tolower);
-    this->normal = this->subject;
+    this->normal = (*this).subject;
     std::sort (this->normal.begin(), this->normal.end());
 }
 
@@ -22,7 +22,7 @@ vector<string> anagram::anagram::matches(vector<string> const &candidates) noexc
         transform (word.begin(), word.end(), word.begin(), ::tolower);
         string sortedLetters = word;
         sort (sortedLetters.begin(), sortedLetters.end());
-        if (sortedLetters == this->normal && word != this->subject)
+        if (sortedLetters == (*this).normal && word != (*this).subject)
             matching.push_back(*candidate);
     }
     return matching;
