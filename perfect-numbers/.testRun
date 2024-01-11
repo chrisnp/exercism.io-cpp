@@ -1,0 +1,25 @@
+===============================================================================
+Thu Jan 11 20:53:47 GTBST 2024
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /c/Users/Chris/exercism/cpp/perfect-numbers/build
+
+>make
+[ 25%] Building CXX object CMakeFiles/perfect-numbers.dir/perfect_numbers_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/perfect-numbers.dir/perfect_numbers.cpp.o
+[ 75%] Building CXX object CMakeFiles/perfect-numbers.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable perfect-numbers.exe
+[100%] Built target perfect-numbers
+===============================================================================
+All tests passed (13 assertions in 13 test cases)
+
+[100%] Built target test_perfect-numbers
