@@ -1,6 +1,17 @@
-#if !defined(PERFECT_NUMBERS_H)
-#define PERFECT_NUMBERS_H
+#pragma once
 
-namespace perfect_numbers {}  // namespace perfect_numbers
+namespace perfect_numbers {
 
-#endif  // PERFECT_NUMBERS_H
+enum classification {
+    abundant,
+    perfect,
+    deficient
+};
+
+auto classify(int) -> classification;
+
+}  // namespace perfect_numbers
+
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
+#endif
