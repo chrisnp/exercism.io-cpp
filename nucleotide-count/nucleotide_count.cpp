@@ -1,9 +1,10 @@
 #include "nucleotide_count.h"
 #include <stdexcept>
 
-nucleotide_count::ncounts nucleotide_count::count(std::string strand) {
-    nucleotide_count::ncounts counts = 
-        {{'A', 0}, {'C', 0}, {'G', 0}, {'T', 0}};
+nucleotide_count::ncounts_t nucleotide_count::count(std::string strand) {
+    nucleotide_count::ncounts_t counts = {
+        {'A', 0}, {'C', 0}, {'G', 0}, {'T', 0}
+    };
     for (auto n : strand) {
         switch(n) {
             case 'A':
