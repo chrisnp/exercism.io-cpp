@@ -4,9 +4,9 @@
 
 namespace nucleotide_count {
 
-typedef std::map<char, int> ncounts_t;
+typedef std::map<char, int> counts_t;
 
-auto count(std::string) -> ncounts_t;
+auto count(std::string) -> counts_t;
 
 }  // namespace nucleotide_count
 
