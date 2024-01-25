@@ -5,7 +5,9 @@
 
 namespace series {
 
-std::vector<std::string> slice(std::string const &, uint32_t);
+using uint_t = unsigned int;
+
+std::vector<std::string> slice(std::string const &, uint_t);
 
 }  // namespace series
 
