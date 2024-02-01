@@ -1,7 +1,7 @@
 #include "binary.h"
 #include <cmath>
 
-using string = std::string;
+using std::string;
 
 long binary::convert (const string& binstr) noexcept {
     for ( auto&& d: binstr ) if ( !isdigit(d) ) return 0;
