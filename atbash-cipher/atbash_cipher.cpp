@@ -6,8 +6,7 @@ std::string atbash_cipher::encode(const std::string &plain) noexcept {
     int index {0};
     for( auto &ch: plain) {
         char c = tolower(ch);
-        if( !(atbash_cipher::alpha(c) || atbash_cipher::digit(c)) ) 
-            continue; 
+        if( !(atbash_cipher::alpha(c) || atbash_cipher::digit(c)) ) continue; 
         if( index > 0 && index % 5 == 0) ciphertext.push_back(' ');
         if( atbash_cipher::digit(c) ) ciphertext.push_back(c);
         if( atbash_cipher::alpha(c) ) ciphertext.push_back('z' - c + 'a');
