@@ -1,65 +1,38 @@
 #pragma once
 
-#include <memory>
 #include <stdexcept>
 
 namespace circular_buffer {
 
 using size_t = std::size_t;
+using std::string;
 
-template <typename T>
-struct circular_buffer {
-    using uptr_t = std::unique_ptr<T>;
+template <typename T> struct circular_buffer {
 
-    explicit circular_buffer(size_t size) 
-    : _head {0}, _last {0}, _size {0}, _capacity {size},    
-      _buffer {new uptr_t[size]}  
-    { clear(); }
+    explicit circular_buffer(size_t);
+    ~circular_buffer();
+    [[nodiscard]] auto const read() -> T&;
+    auto write(const T& item) -> void;
+    auto overwrite(const T& item) -> void;
+    auto clear() -> void;
 
-    ~circular_buffer() { delete[] _buffer; }
-
-    auto capacity() const -> size_t { return _capacity; }
-    auto size() const -> size_t {
-        return _head >= _last 
-               ? _head - _last 
-               : _capacity - (_last - _head);
-    }
-
-    auto const read() -> T {
-        if (size() == 0) {
-            throw std::domain_error("Empty. Nothing to read");
-        }
-        auto item = *_buffer[_head];
-        advance(_head);
-        _size--;
-        return item;
-    };
-
-    auto write(const T& item) -> void {
-        if (size() == capacity() && _head == _last) {
-            throw std::domain_error("Full. Can't write");
-        }
-        _buffer[_last] = std::make_unique<T>(item);
-        advance(_last);
-        _size++;
-    };
-    auto overwrite(const T& item) -> void {
-        if (size() >= capacity()) {
-            advance(_last);
-            // ++_size;
-        }
-        write(item);
-    };
-    auto clear() -> void { _head = _last = 0L; }
+protected:
+    auto capacity() const -> size_t;
+    auto current_size() const -> size_t;
+    // auto empty() const -> bool { return _widx == _ridx; }
     
 private:
-    size_t _head, _last;
-    size_t _size, _capacity;
-    uptr_t* _buffer;
-    auto advance(size_t& val) -> void {
-        ++val %= _capacity;
-    }
+    size_t _ridx, _widx;
+    size_t _capacity;
+    T *_buffer;
+    auto advance(size_t& val) -> void;
 };
+
+/**
+    And two needed declarations, to keep the linker happy.
+*/
+template struct circular_buffer<int>;
+template struct circular_buffer<std::string>;
 
 }  // namespace circular_buffer
 
