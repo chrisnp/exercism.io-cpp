@@ -10,10 +10,7 @@ vector<string> resistor_color::colors() noexcept {
 int resistor_color::color_code(const string &color) {
     int value {0};
     vector<string> colors = resistor_color::colors();
-    for (int i {0}; i < 10; i++) {
-        if (color == colors.at(i)) {
-            value += i;
-        }
-    }
+    for (int i {0}; i < 10; i++) if (color == colors.at(i)) 
+        value += i;
     return value;
 }

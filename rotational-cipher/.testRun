@@ -1,0 +1,25 @@
+===============================================================================
+Tue Feb 20 22:59:09 GTBST 2024
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/rotational-cipher/build
+
+>make
+[ 25%] Building CXX object CMakeFiles/rotational-cipher.dir/rotational_cipher_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/rotational-cipher.dir/rotational_cipher.cpp.o
+[ 75%] Building CXX object CMakeFiles/rotational-cipher.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable rotational-cipher.exe
+[100%] Built target rotational-cipher
+===============================================================================
+All tests passed (10 assertions in 10 test cases)
+
+[100%] Built target test_rotational-cipher
