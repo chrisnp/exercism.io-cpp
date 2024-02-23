@@ -5,9 +5,10 @@
 
 namespace series {
 
-using uint_t = unsigned int;
+typedef std::vector<std::string> slices_t;
+using luint_t = long unsigned int;
 
-std::vector<std::string> slice(std::string const &, uint_t);
+auto slice(std::string const &, luint_t) -> slices_t;
 
 }  // namespace series
 
