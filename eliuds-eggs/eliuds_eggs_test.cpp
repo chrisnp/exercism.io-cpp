@@ -27,4 +27,10 @@ TEST_CASE("13 eggs")
     REQUIRE(chicken_coop::positions_to_quantity(2000000000) == 13);
 }
 
+TEST_CASE("18 eggs")
+{
+    REQUIRE(chicken_coop::positions_to_quantity(952866549L) == 
+            chicken_coop::positions_to_quantity(2077010123));
+    REQUIRE(chicken_coop::positions_to_quantity(2077010123) == 18);
+}
 #endif
