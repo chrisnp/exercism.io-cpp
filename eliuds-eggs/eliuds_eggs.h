@@ -2,7 +2,7 @@
 
 namespace chicken_coop {
 
-[[gnu::pure]]    
+[[gnu::pure]]
 inline auto positions_to_quantity(int displayed) noexcept -> unsigned int {
     if (displayed <= 0) return 0;
     return displayed % 2 + positions_to_quantity(displayed / 2);
