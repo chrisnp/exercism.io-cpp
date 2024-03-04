@@ -6,9 +6,9 @@ namespace rotational_cipher {
 
 using std::string;
 
-static const char ALPHA_LOWER = 'a';
-static const char ALPHA_UPPER = 'A';
-static const int  ALPHABET = 26;
+static const char ALPHA_LOWER {'a'};
+static const char ALPHA_UPPER {'A'};
+static const int  ALPHABET {26};
 
 auto rotate(const string&, int) noexcept -> string;
 
