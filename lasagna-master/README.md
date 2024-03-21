@@ -168,7 +168,7 @@ The result should be returned as an `amount` _struct_, which is already  defined
 ```cpp
 struct amount { int noodles; double sauce; };
 
-needed = quantities({"sauce", "noodles", "sauce", "meat", "mozzarella", "noodles"});
+amount needed{quantities({"sauce", "noodles", "sauce", "meat", "mozzarella", "noodles"})};
 // needed.noodles => 100
 // needed.sauce => 0.4
 ```
@@ -212,7 +212,7 @@ This means the `quantities` argument should not be modified in this function.
 
 ```cpp
 std::vector<double> quantities{1.2, 3.6, 10.5};
-scaledQuantities := scaleRecipe(quantities, 4);
+scaleRecipe(quantities, 4);
 // => { 2.4, 7.2, 21 }
 ```
 
@@ -226,7 +226,7 @@ With a mixture of excitement and trepidation, you decide to reach out to your gr
 As expected, she responds in her cryptic manner, offering a single secret ingredient, wrapped in mystery.
 
 Your great-grand auntie's contribution adds a layer of complexity, that you want to use in your recipe.
-Implement another version of the `addSecretIngredient` function that accepts two arguments: a const reference to a vector representing the friend's list of ingredients and a single string representing the enigmatic offering from your great-grand auntie.
+Implement another version of the `addSecretIngredient` function that accepts two arguments: a reference to a vector representing your list of ingredients and a single string representing the enigmatic offering from your great-grand auntie.
 
 ```cpp
 std::vector<std::string> myList{"noodles", "meat", "sauce", "mozzarella", "?"};
