@@ -1,15 +1,17 @@
 namespace hellmath {
-
 // Task 1
 enum class AccountStatus : int { troll = 0, guest = 1, user = 2, mod = 3 };
 enum class Action : int { read = 1, write = 2, remove = 3 };
+
 using S = AccountStatus;
 using A = Action;
+
 // Task 2
 [[nodiscard]]
 auto display_post(const S &poster, const S &viewer) noexcept -> bool {
     int p = static_cast<int>(poster), v = static_cast<int>(viewer);
-    return (p * v != 0 || p + v == 0);
+    // return (p * v != 0 || p + v == 0);
+    return p == 0 ? p + v == 0 : true;
 }
 // Task 3
 [[nodiscard]]
