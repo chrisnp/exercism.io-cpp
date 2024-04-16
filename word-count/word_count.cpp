@@ -13,7 +13,7 @@ const map<string, int> word_count::words( const string &text ) {
     for ( unsigned int i = 0; i < text.length(); i++ ) {
         auto &c = text[i];
         if ( delim(c) && !wordchars.empty() ) {
-            wordcount[string(wordchars.begin(), wordchars.end())]++;
+            ++wordcount[string(wordchars.begin(), wordchars.end())];
             wordchars = vector<char>();
         } 
         else if ( (c == '\'' && isalnum(text[i - 1]) && isalnum(text[i + 1])) 
@@ -23,6 +23,6 @@ const map<string, int> word_count::words( const string &text ) {
         else continue;
     }
     if ( !wordchars.empty() ) 
-        wordcount[string(wordchars.begin(), wordchars.end())]++;
+        ++wordcount[string(wordchars.begin(), wordchars.end())]++;
     return wordcount;
 }
