@@ -6,7 +6,7 @@ cmake -G "Unix Makefiles" ..
 -- The CXX compiler identification is GNU 13.2.0
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Check for working CXX compiler: /usr/bin/c++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Configuring done (2.5s)
@@ -33,12 +33,39 @@ Mon Apr 15 20:04:09 GTBDT 2024
 -- The CXX compiler identification is GNU 13.2.0
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Check for working CXX compiler: /usr/bin/c++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Configuring done (2.6s)
 -- Generating done (0.1s)
--- Build files have been written to: /c/Users/Chris/exercism/cpp/troll-the-trolls/build
+-- Build files have been written to: /~/exercism/cpp/troll-the-trolls/build
+
+>make
+[ 33%] Building CXX object CMakeFiles/troll-the-trolls.dir/troll_the_trolls_test.cpp.o
+[ 66%] Building CXX object CMakeFiles/troll-the-trolls.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable troll-the-trolls.exe
+[100%] Built target troll-the-trolls
+===============================================================================
+All tests passed (80 assertions in 18 test cases)
+
+[100%] Built target test_troll-the-trolls
+
+
+
+===============================================================================
+Tue Apr 16 22:48:09 GTBDT 2024
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/troll-the-trolls/build
 
 >make
 [ 33%] Building CXX object CMakeFiles/troll-the-trolls.dir/troll_the_trolls_test.cpp.o

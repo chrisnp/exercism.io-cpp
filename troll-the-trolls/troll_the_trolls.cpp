@@ -10,8 +10,8 @@ using A = Action;
 [[nodiscard]]
 auto display_post(const S &poster, const S &viewer) noexcept -> bool {
     int p = static_cast<int>(poster), v = static_cast<int>(viewer);
-    // return (p * v != 0 || p + v == 0);
-    return p == 0 ? p + v == 0 : true;
+    // return (p * v != 0 || p + v == 0); 
+    return p != 0 || (p == 0 && p == p + v);
 }
 // Task 3
 [[nodiscard]]
