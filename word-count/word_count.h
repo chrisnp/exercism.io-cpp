@@ -4,7 +4,8 @@
 
 namespace word_count {
 
-const std::map<std::string, int> words(const std::string&);
+typedef std::map<std::string, int> words_map_t;
+const words_map_t words(const std::string&);
 
 }  // namespace word_count
 
