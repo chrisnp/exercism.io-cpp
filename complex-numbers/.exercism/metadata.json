@@ -1,9 +1,1 @@
-{
-    "track": "cpp",
-    "exercise": "complex-numbers",
-    "id": "b346de1610184a34bf46dd8662cec9e8",
-    "url": "https://exercism.org/tracks/cpp/exercises/complex-numbers/solutions/b346de1610184a34bf46dd8662cec9e8",
-    "handle": "heptalophos",
-    "is_requester": true,
-    "auto_approve": false
-}
+{"track":"cpp","exercise":"complex-numbers","id":"b346de1610184a34bf46dd8662cec9e8","url":"https://exercism.org/tracks/cpp/exercises/complex-numbers","handle":"heptalophos","is_requester":true,"auto_approve":false}
