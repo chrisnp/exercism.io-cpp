@@ -2,8 +2,8 @@
 
 namespace dnd_character {
 
-auto ability() -> int;
-auto modifier(int) -> int;
+[[nodiscard, gnu::pure]] auto ability() -> int;
+[[nodiscard, gnu::pure]] auto modifier(int) -> int;
 
 struct Character {
     int strength { 0 };
