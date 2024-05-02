@@ -8,11 +8,11 @@ using std::min_element;
 using std::accumulate;
 
 auto dnd_character::ability() -> int {
-    auto roll = [=] () { return rand() % 6; };
-    array<int, 4> dice_rolls; 
+    auto roll = [=]() { return 1 + std::rand() % 6; };
+    array<int, 4> dice_rolls {}; 
     for (int i = 0; i <= 3; ++i) dice_rolls[i] = roll();
     auto discard = *min_element(dice_rolls.begin(), dice_rolls.end());
-    return accumulate(dice_rolls.begin(), dice_rolls.end(), 0) - discard;
+    return accumulate(dice_rolls.begin(), dice_rolls.end(), -discard);
 }
 
 auto dnd_character::modifier(int score) -> int {
