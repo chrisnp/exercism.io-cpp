@@ -3,40 +3,40 @@
 
 namespace complex_numbers {
 
-Complex::Complex(double real, double imag) : _Real(real), _Imag(imag) 
-{}
+Complex::Complex(double real, double imag) : _real(real), _imag(imag) {}
+Complex::Complex(double real) : _real(real) {}
 
-auto Complex::real() const -> double { return _Real; }
-auto Complex::imag() const -> double { return _Imag; }
-
-double Complex::abs() const {
-  return std::sqrt(_Real * _Real + _Imag * _Imag);
+double Complex::real() const { return _real; }
+double Complex::imag() const { return _imag; }
+double Complex::abs() const { 
+  return std::sqrt(_real * _real + _imag * _imag);
 }
-
-Complex Complex::conj() const { return Complex(_Real, -_Imag); }
-
+Complex Complex::conj() const { return Complex(_real, -_imag); }
 Complex Complex::exp() const {
-  double exp_a = std::exp(_Real);
-  return Complex(exp_a * std::cos(_Imag), exp_a * std::sin(_Imag));
+  auto xp = std::exp(_real);
+  auto r = xp * std::cos(_imag);
+  auto i = xp * std::sin(_imag);
+  return Complex(r, i);
 }
-
-Complex Complex::operator*(const Complex &that) const {
-  return Complex(_Real * that._Real - _Imag * that._Imag,
-                 _Imag * that._Real + _Real * that._Imag);
+Complex operator+(const Complex& x, const Complex& y) {
+  auto r = x.real() + y.real();
+  auto i = x.imag() + y.imag();
+  return Complex(r, i);
 }
-
-Complex Complex::operator/(const Complex &that) const {
-  double cd_squared = that._Real * that._Real + that._Imag * that._Imag;
-  return Complex((_Real * that._Real + _Imag * that._Imag) / cd_squared,
-                 (_Imag * that._Real - _Real * that._Imag) / cd_squared);
+Complex operator-(const Complex& x, const Complex& y) {
+  auto r = x.real() - y.real();
+  auto i = x.imag() - y.imag();
+  return Complex(r, i);
 }
-
-Complex Complex::operator+(const Complex &that) const {
-  return Complex(_Real + that._Real, _Imag + that._Imag);
+Complex operator*(const Complex& x, const Complex& y) {
+  auto r = x.real() * y.real() - x.imag() * y.imag();
+  auto i = x.imag() * y.real() + x.real() * y.imag();
+  return Complex(r, i);
 }
-
-Complex Complex::operator-(const Complex &that) const {
-  return Complex(_Real - that._Real, _Imag - that._Imag);
+Complex operator/(const Complex& x, const Complex& y) {
+  auto d = y.real() * y.real() + y.imag() * y.imag();
+  auto r = (x.real() * y.real() + x.imag() * y.imag()) / d;
+  auto i = (x.imag() * y.real() - x.real() * y.imag()) / d;
+  return Complex(r, i);
 }
-
-}  // namespace complex_numbers
+} // namespace complex_numbers

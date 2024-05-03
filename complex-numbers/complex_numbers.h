@@ -3,22 +3,23 @@
 namespace complex_numbers {
 
 class Complex {
+private:
+    double _real;
+    double _imag;
 public:
     Complex(double real, double imag);
-    auto real() const -> double;
-    auto imag() const -> double;
-    auto abs() const -> double;
-    auto conj() const -> Complex;
-    auto exp() const -> Complex;
-    auto operator*(const Complex &that) const -> Complex;
-    auto operator/(const Complex &that) const -> Complex;
-    auto operator+(const Complex &that) const -> Complex;
-    auto operator-(const Complex &that) const -> Complex;
-private:
-    double _Real;
-    double _Imag;
+    Complex(double real);
+    [[nodiscard]] auto real() const -> double;
+    [[nodiscard]] auto imag() const -> double;
+    [[nodiscard]] auto abs() const -> double;
+    [[nodiscard]] auto conj() const -> Complex;
+    [[nodiscard]] auto exp() const -> Complex;
 };
 
+Complex operator+(const Complex&, const Complex&);
+Complex operator-(const Complex&, const Complex&);
+Complex operator*(const Complex&, const Complex&);
+Complex operator/(const Complex&, const Complex&);
 }  // namespace complex_numbers
 
 
