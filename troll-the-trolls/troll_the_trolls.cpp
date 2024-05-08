@@ -9,8 +9,8 @@ using A = Action;
 // Task 2
 [[nodiscard]]
 auto display_post(const S &poster, const S &viewer) noexcept -> bool {
-    int p = static_cast<int>(poster), v = static_cast<int>(viewer);
-    // return (p * v != 0 || p + v == 0); 
+    int p = static_cast<int>(poster), 
+        v = static_cast<int>(viewer);
     return p != 0 || (p == 0 && p == p + v);
 }
 // Task 3
@@ -26,7 +26,8 @@ auto permission_check(const A &action, const S &status) noexcept -> bool {
 // Task 4
 [[nodiscard]]
 auto valid_player_combination(const S &player1, const S &player2) noexcept -> bool {
-    int s1 = static_cast<int>(player1), s2 = static_cast<int>(player2);
+    int s1 = static_cast<int>(player1), 
+        s2 = static_cast<int>(player2);
     return s1 * s2 > 3 || s1 + s2 == 0 ; 
 }
 // Task 5
