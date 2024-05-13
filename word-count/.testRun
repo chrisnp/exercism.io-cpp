@@ -59,14 +59,18 @@ All tests passed (13 assertions in 13 test cases)
 
 
 
+===============================================================================
+Fri Apr 19 18:19:41 GTBDT 2024
+===============================================================================
 >cmake -G "Unix Makefiles" ..
--- The CXX compiler identification is GNU 11.3.0
+
+-- The CXX compiler identification is GNU 13.2.0
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
 -- Check for working CXX compiler: /usr/bin/c++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done (1.8s)
+-- Configuring done (2.3s)
 -- Generating done (0.1s)
 -- Build files have been written to: /~/exercism/cpp/word-count/build
 
@@ -77,14 +81,14 @@ All tests passed (13 assertions in 13 test cases)
 [100%] Linking CXX executable word-count.exe
 [100%] Built target word-count
 ===============================================================================
-All tests passed (13 assertions in 13 test cases)
+All tests passed (14 assertions in 14 test cases)
 
 [100%] Built target test_word-count
 
 
 
 ===============================================================================
-Fri Apr 19 18:19:41 GTBDT 2024
+Fri Apr 22 22:59:08 GTBDT 2024
 ===============================================================================
 >cmake -G "Unix Makefiles" ..
 
