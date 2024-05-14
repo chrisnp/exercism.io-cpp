@@ -4,9 +4,12 @@
 
 namespace run_length_encoding {
 
-using std::string;
-
-[[nodiscard]] auto encode(const string&) noexcept -> string;
-[[nodiscard]] auto decode(const string&) noexcept -> string;
+[[gnu::pure]] auto encode(const std::string&) noexcept -> std::string;
+[[gnu::pure]] auto decode(const std::string&) noexcept -> std::string;
 
 }  // namespace run_length_encoding
+
+
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
+#endif
