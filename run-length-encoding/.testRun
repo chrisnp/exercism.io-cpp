@@ -23,3 +23,31 @@ Tue May 14 19:37:33 GTBDT 2024
 All tests passed (13 assertions in 13 test cases)
 
 [100%] Built target test_run-length-encoding
+
+
+
+===============================================================================
+Wed May 15 02:25:43 GTBDT 2024
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/run-length-encoding/build
+
+>make
+[ 25%] Building CXX object CMakeFiles/run-length-encoding.dir/run_length_encoding_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/run-length-encoding.dir/run_length_encoding.cpp.o
+[ 75%] Building CXX object CMakeFiles/run-length-encoding.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable run-length-encoding.exe
+[100%] Built target run-length-encoding
+===============================================================================
+All tests passed (13 assertions in 13 test cases)
+
+[100%] Built target test_run-length-encoding
