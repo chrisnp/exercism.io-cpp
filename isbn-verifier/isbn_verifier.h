@@ -1,8 +1,15 @@
-#if !defined(ISBN_VERIFIER_H)
-#define ISBN_VERIFIER_H
+#pragma once
+
+#include <string>
 
 namespace isbn_verifier {
-    
+
+[[nodiscard]]
+auto is_valid(std::string const&) noexcept -> bool;    
+
 } // namespace isbn_verifier
 
-#endif // ISBN_VERIFIER_H
+
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
+#endif
