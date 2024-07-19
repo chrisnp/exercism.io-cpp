@@ -12,4 +12,5 @@ static const std::vector<std::string> _colors {
 
 auto colors() noexcept -> std::vector<std::string>;
 auto color_code(const std::string&) -> int;
+
 }  // namespace resistor_color
