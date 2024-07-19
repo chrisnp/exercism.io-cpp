@@ -24,5 +24,4 @@ TEST_CASE("Colors", "[581d68fa-f968-4be2-9f9d-880f2fb73cf7]") {
 	REQUIRE(expected == resistor_color::colors());
 }
 #if defined(EXERCISM_RUN_ALL_TESTS)
-
 #endif
