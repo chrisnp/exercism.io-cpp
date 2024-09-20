@@ -6,7 +6,7 @@
 namespace resistor_color_duo {
 
 const std::vector<std::string> colors {
-    "black", "brown", "red", "orange", "yellow", 
+    "black", "brown", "red", "orange", "yellow",
     "green", "blue", "violet", "grey", "white"
 };
 

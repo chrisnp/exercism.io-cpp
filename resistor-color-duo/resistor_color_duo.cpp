@@ -5,8 +5,7 @@ using std::vector;
 
 auto color_code(const string& color) -> int {
     for (size_t i {}; i <= resistor_color_duo::colors.size(); ++i)
-        if(resistor_color_duo::colors.at(i) == color)            
-            return i;
+        if(resistor_color_duo::colors.at(i) == color) return i;
     return -1;
 }
 
