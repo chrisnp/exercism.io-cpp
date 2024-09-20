@@ -1,6 +1,6 @@
 #include "isbn_verifier.h"
 
-using string = std::string;
+using std::string;
 
 auto constexpr digit = [](const char c) noexcept -> int {
     if (c == 'X') return 10;
@@ -9,8 +9,8 @@ auto constexpr digit = [](const char c) noexcept -> int {
 };
 
 bool isbn_verifier::is_valid(string const& isbn) noexcept {
-    int position {10}; int csum {0};
-    auto valid_checksum = [&position, &csum](string num) {
+    int position {10}, csum {0};
+    auto valid_checksum = [&](string num) {
         for (auto &c: num) {
             if (c == '-') continue;
             if (digit(c) == -1) break;
