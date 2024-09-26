@@ -1,18 +1,14 @@
 #include "pangram.h"
 #include <bitset>
 
-using namespace std;
-using alphabet = bitset<pangram::ALPHABET_SIZE>;
-
-constexpr auto letter_idx(char ch) noexcept -> int {
-    return tolower(ch) - 'a';
-}
+using std::string;
+using alphabet = std::bitset<pangram::ALPHABET_SIZE>;
 
 bool pangram::is_pangram(const string &sentence) noexcept {
     if (sentence.size() < pangram::ALPHABET_SIZE) return false;
-    alphabet letters;
+    alphabet letters {};
     for (const char ch: sentence) if (isalpha(ch)) {
-        letters.set(letter_idx(ch));
+        letters.set(pangram::letter_idx(ch));
     }
     return letters.all();
 }
