@@ -51,3 +51,30 @@ Thu Jul 25 21:37:03 GTBDT 2024
 All tests passed (60 assertions in 16 test cases)
 
 [100%] Built target test_circular-buffer
+
+
+
+===============================================================================
+Wed Jan 15 12:05:01 GTBST 2025
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /c/usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/circular-buffer/build
+
+>make
+[ 33%] Building CXX object CMakeFiles/circular-buffer.dir/circular_buffer_test.cpp.o
+[ 66%] Building CXX object CMakeFiles/circular-buffer.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable circular-buffer.exe
+[100%] Built target circular-buffer
+===============================================================================
+All tests passed (60 assertions in 16 test cases)
+
+[100%] Built target test_circular-buffer
