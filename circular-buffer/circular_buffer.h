@@ -46,8 +46,7 @@ protected:
     auto empty() const -> bool { return _write_idx == _read_idx; }
 
 private:
-    size_t _read_idx, _write_idx;
-    size_t _capacity;
+    size_t _read_idx, _write_idx, _capacity;
     T *_buffer;
     auto advance(size_t& val) -> void { ++val %= _capacity + 1; }
 }; // struct circular_buffer
