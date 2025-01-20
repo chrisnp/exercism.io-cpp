@@ -4,15 +4,12 @@ namespace phone_number {
 
 using std::string;
 
-class phone_number
-{
-    /* data */
-    public:
-        phone_number(const string&);
-        string number() const;
-        string area_code() const;
-        string exchange() const;
-        operator string() const;
+struct phone_number {
+    phone_number(const string&);
+    string number() const;
+    string area_code() const;
+    string exchange() const;
+    operator string() const;
     private:
         string _number;
         string _area;
