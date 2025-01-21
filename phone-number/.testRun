@@ -1,0 +1,25 @@
+===============================================================================
+Tue Jan 21 15:05:13 GTBST 2025
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /~/exercism/cpp/phone-number/build
+
+>make
+[ 25%] Building CXX object CMakeFiles/phone-number.dir/phone_number_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/phone-number.dir/phone_number.cpp.o
+[ 75%] Building CXX object CMakeFiles/phone-number.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable phone-number.exe
+[100%] Built target phone-number
+===============================================================================
+All tests passed (18 assertions in 18 test cases)
+
+[100%] Built target test_phone-number
