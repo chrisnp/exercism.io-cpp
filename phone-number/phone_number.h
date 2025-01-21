@@ -1,20 +1,22 @@
 #pragma once
 
+#include <string>
+
 namespace phone_number {
 
-using std::string;
-
-struct phone_number {
-    phone_number(const string&);
-    string number() const;
-    string area_code() const;
-    string exchange() const;
-    operator string() const;
+struct phone_number final {
+    explicit phone_number(const std::string&);
+    [[nodiscard]] std::string number() const;
+    [[nodiscard]] std::string area_code() const;
+    [[nodiscard]] std::string exchange() const;
+    [[nodiscard]] std::string subscriber() const;
+    explicit operator std::string() const;
     private:
-        string _number;
-        string _area;
-        string _exchange;
-        string _formatted;
+        std::string _number;
+        std::string _area;
+        std::string _exchange;
+        std::string _subscriber;
+        std::string _formatted;
 
 };
 
