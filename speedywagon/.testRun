@@ -1,0 +1,25 @@
+===============================================================================
+Fri Aug 29 20:34:32 GTBDT 2025
+===============================================================================
+>cmake -G "Unix Makefiles" ..
+
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (3.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: ~/exercism/cpp/speedywagon/build
+
+>make
+[ 25%] Building CXX object CMakeFiles/speedywagon.dir/speedywagon_test.cpp.o
+[ 50%] Building CXX object CMakeFiles/speedywagon.dir/speedywagon.cpp.o
+[ 75%] Building CXX object CMakeFiles/speedywagon.dir/test/tests-main.cpp.o
+[100%] Linking CXX executable speedywagon.exe
+[100%] Built target speedywagon
+===============================================================================
+All tests passed (11 assertions in 9 test cases)
+
+[100%] Built target test_speedywagon
