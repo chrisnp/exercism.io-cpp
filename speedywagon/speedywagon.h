@@ -11,6 +11,15 @@ struct pillar_men_sensor {
     std::vector<int> data{};
 };
 
-int uv_light_heuristic(std::vector<int>* data_array);
+auto uv_light_heuristic(const std::vector<int>* data_array) -> int;
+
+auto connection_check(const pillar_men_sensor* sensor) -> bool;
+auto activity_counter(const pillar_men_sensor* sensors, int sensor_count) -> int;
+auto alarm_control(const pillar_men_sensor* sensor) -> bool;
+auto uv_alarm(const pillar_men_sensor* sensor) -> bool;
 
 }  // namespace speedywagon
+
+#ifndef EXERCISM_RUN_ALL_TESTS
+#define EXERCISM_RUN_ALL_TESTS
+#endif
